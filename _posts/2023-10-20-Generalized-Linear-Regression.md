@@ -1,6 +1,6 @@
 ---
 layout: post
 math:true
-toc: true
+toc:true
 ---
 
