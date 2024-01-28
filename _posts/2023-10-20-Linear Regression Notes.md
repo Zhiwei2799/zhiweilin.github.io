@@ -80,10 +80,10 @@ These methods help address the issue of multicollinearity and improve the accura
 
 ### Maximum Likilihood Estimation 
 
-$$
-f(y_i | x_i, \beta_0, \beta_1, \ldots, \beta_p) = \\
-\frac{1}{\sqrt{2 \pi \sigma^2}} \exp\left(-\frac{(y_i - (\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_p x_{ip}))^2}{2\sigma^2}\right)
-$$
+\begin{align*}
+f(y_i | x_i, \beta_0, \beta_1, \ldots, \beta_p) &= \\
+&\frac{1}{\sqrt{2 \pi \sigma^2}} \exp\left(-\frac{(y_i - (\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_p x_{ip}))^2}{2\sigma^2}\right)
+\end{align*}
 
 The likelihood function for the entire dataset $$\{(x_i, y_i)\}_{i=1}^n $$ is the product of the likelihoods of individual observations:
 
