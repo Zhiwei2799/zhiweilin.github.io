@@ -1,6 +1,6 @@
 ---
-layout: archive-taxonomies
-type: categories
-title: Categories
-permalink: /categories/
+layout: page
+type: CV
+title: CV
+permalink: /CV/
 ---
