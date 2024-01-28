@@ -47,7 +47,7 @@ $$
 
 Least square error tries to minimize the sum of square residuals: $$ \varepsilon = \sum(y-\hat{y})^2 $$.
 
-To minimize this $\varepsilon$:
+To minimize this $$ \varepsilon $$:
 
 $$
 \begin{align*}
@@ -69,7 +69,7 @@ $$ \Rightarrow w_{optimial} = (X^TX)^{-1}X^T y $$
 where $$ X^TX $$ is invertible.
 
 
-It's known that $x_{1}, x_{2}, \ldots, x_{p}$ need to be independent of each other for the matrix $X$ to be invertible. In practice, we often assume that variables are independent from each other, even if they exhibit small correlations. However, if variables are strongly correlated (dependent), they shouldn't be included in the linear model, as they will lead to incorrect results. 
+It's known that $$ x_{1}, x_{2}, \ldots, x_{p} $$ need to be independent of each other for the matrix $X$ to be invertible. In practice, we often assume that variables are independent from each other, even if they exhibit small correlations. However, if variables are strongly correlated (dependent), they shouldn't be included in the linear model, as they will lead to incorrect results. 
 
 There are several methods to handle multiple dependent variables in regression models:
 
