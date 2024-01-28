@@ -1,7 +1,7 @@
 title: Personal Website
 description: Welcome to my website
 author: Zhiwei Lin
-avatar: /logo.png
+avatar: /logo123.png
 email: zhiweilin27@gmail.com
 
 plugins:
@@ -29,7 +29,7 @@ exclude:
 
 # Jekyll SEO Tag (Optional)
 # =========================
-logo: logo.png
+logo: logo123.png
 social:
   name: Zhiwei Lin
   links:
