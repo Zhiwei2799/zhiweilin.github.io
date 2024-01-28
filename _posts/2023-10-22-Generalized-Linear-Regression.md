@@ -60,7 +60,7 @@ Thus,
 $$ P(y|x) = \Theta(yw^Tx) $$
 
 One of the reasons for choosing the mathematical form $$\Theta(s) = \frac{e^s}{1+e^s}$$ 
-is that it leads to this simple expression for P(y|x) 
+is that it leads to this simple expression for $$P(y|x)$$ 
 
 The likelihood for a sample of size $$ N $$ is given by:
 
