@@ -31,12 +31,12 @@ These model comparison statistics penalize complex models to favor simplicity, f
 $$
 \begin{align*}
 \text{Mallow's } C_p & : \frac{RSS+2ps_{\text{full}}^2}{n} \\
-\text{AIC} & : \frac{RSS+2ps_{\text{full}}^2}{n} \\
-\text{BIC} & : \frac{RSS+\ln(n)ps_{\text{full}}^2}{n}
+\text{AIC} & : 2p-2ln(L) \\
+\text{BIC} & : ln(n)p-2ln(L)
 \end{align*}
 $$
 
-Here, $$ p $$ is the number of predictors, and $$ s_{\text{full}}^2 $$ is the mean squared error of the full model.
+Here, $$ p $$ is the number of predictors, $$ s_{\text{full}}^2 $$ is the mean squared error of the full model, $$L$$ maximum value of the likelihood function for the model.
 
 ## Shrinkage Methods
 
