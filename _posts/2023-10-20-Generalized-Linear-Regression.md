@@ -48,10 +48,11 @@ Shrinkage methods regulate or shrink coefficient estimates towards zero.
 In Ridge regression, the objective function is:
 
 $$
-E(w) = \sum(y_i - (\beta_0 + \beta_1x_{i1} + \ldots + \beta_p x_{ip}))^2 + \lambda \sum (\beta_j^2),
+E(w) = \sum(y_i - (w_0 + w_1x_{i1} + \ldots + w_p x_{ip}))^2 + \lambda \sum (w_j^2),
 $$
 
-where $$\lambda \geq 0$$ is called the tuning parameter. The lambda value is a hyperparameter that needs to be tuned (using cross-validation) to obtain the value of lambda such that the error (RSS) is minimized.
+where $\lambda \geq 0$ is called the tuning parameter. The lambda value is a hyperparameter that needs to be tuned (using cross-validation) to obtain the value of lambda such that the error (RSS) is minimized.
+
 
 
 
@@ -71,7 +72,7 @@ $$ \Rightarrow w = (x^Tx + \lambda I)^{-1}(x^Ty) $$
 In Lasso regression, the objective function is similar to Ridge, but the penalty term involves the absolute value of the coefficients:
 
 $$
-E(w) = \sum(y_i - (\beta_0 + \beta_1x_{i1} + \ldots + \beta_p x_{ip}))^2 + \lambda \sum (|\beta_j|).
+E(w) = \sum(y_i - (w_0 + w_1x_{i1} + \ldots + w_p x_{ip}))^2 + \lambda \sum (|w_j|).
 $$
 
 In contrast to Ridge regression, the Lasso has the remarkable effect of shrinking the coefficient estimates to be exactly zeros. Therefore, Lasso can also be used for variable selection.
@@ -79,14 +80,11 @@ In contrast to Ridge regression, the Lasso has the remarkable effect of shrinkin
 
 
 ## Elastic Net
-
 Elastic Net combines the penalties of both Lasso and Ridge regression techniques:
 
 $$
-\begin{align*}
-E(w) & = \sum(y_i - (\w_0 + \w_1x_{i1} + \ldots + \w_p x_{ip}))^2 \\
-& \quad + \lambda_1 \sum (\w_j^2) + \lambda_2 \sum (|\w_j|)
-\end{align*}
+E(w) = \sum(y_i - (w_0 + w_1x_{i1} + \ldots + w_p x_{ip}))^2 + \lambda_1 \sum (w_j^2) + \lambda_2 \sum (|w_j|).
 $$
 
 Overall, these methods provide effective ways to handle multicollinearity in regression models.
+
