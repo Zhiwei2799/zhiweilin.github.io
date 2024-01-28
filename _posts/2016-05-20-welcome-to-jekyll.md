@@ -3,7 +3,7 @@ layout: post
 math: true
 toc: true
 ---
-# Linear Regression Overview
+## Linear Regression Overview
 Linear regression is a statistical method used to model the linear relationship between a dependent variable y and one or more independent variables $$ x_{1}, x_{2}, \ldots, x_{p} $$. It is simple, yet it remains one of the most useful analytical tools. While it may not always yield the highest accuracy, its interpretability is unparalleled.
 
 The linear regression model takes the form:
@@ -43,7 +43,7 @@ $$
 \mathbf{\varepsilon} = \begin{pmatrix} \varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n \end{pmatrix}
 $$
 
-## Least Square Estimation
+### Least Square Estimation
 
 Least square error tries to minimize the sum of square residuals: $$ \varepsilon = \sum(y-\hat{y})^2 $$.
 
@@ -78,7 +78,7 @@ There are several methods to handle multiple dependent variables in regression m
 
 These methods help address the issue of multicollinearity and improve the accuracy and reliability of the regression model.
 
-## Maximum Likilihood Estimation 
+### Maximum Likilihood Estimation 
 
 $$
 f(y_i | x_i, \beta_0, \beta_1, \ldots, \beta_p) = 
@@ -104,9 +104,9 @@ Solving this system of equations gives us the maximum likelihood estimates $$ \h
 
 This approach provides estimates that maximize the likelihood of observing the given data under the assumed linear regression model. When $$f_θ$$ is a normal distribution with zero mean and variance θ, the resulting estimate is identical to the least square estimation.
 
-## Other Estimation Technique (quantile regression)
+### Other Estimation Technique (quantile regression)
 Other estimation techniques like quantile regression are also very useful. It focuses on the conditional quantiles of y given X rather than the conditional mean of y given X. Least square estimation is highly affected by outliers, but quantile regression is more robust to outliers. Quantile regression is very useful in some real-world data with outliers. 
 
-## Convexity
+### Convexity
 A good error function is required to be convex, which has only one minimum point. This property simplifies the optimization process, as there is no risk of getting stuck in a suboptimal solution. Mathematicians/Statisticians put much effort into designing a convex error function. 
 In addition, the least square error is the quadratic objective function, while the quantile error function is the linear objective function. In terms of efficiency, linear objective function like quantile regression runs much faster than least-squared regression in large datasets. 
