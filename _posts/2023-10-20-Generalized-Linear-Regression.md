@@ -1,7 +1,7 @@
 ---
 layout: post
-math:true
-toc:true
+math: true
+toc: true
 ---
 
 ## Multicollinearity 
