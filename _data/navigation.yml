@@ -1,14 +1,7 @@
 - title: About ME
-  url: /about/
+  url: /About Me/
 - title: Project
-  url: /years/
+  url: /Project/
 - title: CV
-  url: /categories/
-- title: Tags
-  url: /tags/
-- title: More
-  sublinks:
-    - title: FAQ
-      url: /faq/
-    - title: Docs
-      url: /docs/
+  url: /CV/
+
