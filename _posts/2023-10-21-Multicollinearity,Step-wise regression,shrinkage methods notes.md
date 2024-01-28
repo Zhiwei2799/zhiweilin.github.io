@@ -3,7 +3,6 @@ layout: post
 math: true
 toc: true
 ---
-
 ## Multicollinearity 
 
 Multicollinearity occurs when two or more predictors in a regression model are moderately or highly correlated with each other. In the least squares estimation, 
