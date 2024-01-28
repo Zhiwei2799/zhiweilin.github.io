@@ -59,10 +59,10 @@ E &= \sum(\hat{y} - y)^2 \\
 \end{align*}
 $$
 
-$$ \delta E = 2(X^TXw - X^T y) = 0 $$
+$$ 	\nabla E = 2(X^TXw - X^T y) = 0 $$
 
 $$ \Rightarrow X^TXw = X^Ty $$
 
 $$ \Rightarrow w = (X^TX)^{-1}X^T y $$
 
-where $X^TX$ is invertible.
+where $$ X^TX $$ is invertible.
