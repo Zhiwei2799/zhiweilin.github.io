@@ -1,5 +1,5 @@
 ---
-layout: archive-years
-title: Years
-permalink: /years/
+layout: page
+title: Project
+permalink: /Project/
 ---
