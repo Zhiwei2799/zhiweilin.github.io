@@ -3,7 +3,7 @@ layout: post
 math: true
 toc: true
 ---
-
+## Linear Regression 
 Linear regression is a statistical method used to model the linear relationship between a dependent variable y and one or more independent variables $$ x_{1}, x_{2}, \ldots, x_{p} $$. It is simple, yet it remains one of the most useful analytical tools. While it may not always yield the highest accuracy, its interpretability is unparalleled.
 
 The linear regression model takes the form:
@@ -43,7 +43,7 @@ $$
 \mathbf{\varepsilon} = \begin{pmatrix} \varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n \end{pmatrix}
 $$
 
-# Least Square Error
+## Least Square Error
 
 Least square error tries to minimize the sum of square residuals: $$ \varepsilon = \sum(y-\hat{y})^2 $$.
 
