@@ -67,7 +67,7 @@ $$ w = \frac{x^Ty}{x^Tx+\lambda I} $$
 
 $$ \Rightarrow w = (x^Tx + \lambda I)^{-1}(x^Ty) $$
 
-## Lasso Regression
+### Lasso Regression
 
 In Lasso regression, the objective function is similar to Ridge, but the penalty term involves the absolute value of the coefficients:
 
@@ -79,7 +79,7 @@ In contrast to Ridge regression, the Lasso has the remarkable effect of shrinkin
 
 
 
-## Elastic Net
+### Elastic Net
 Elastic Net combines the penalties of both Lasso and Ridge regression techniques:
 
 $$
