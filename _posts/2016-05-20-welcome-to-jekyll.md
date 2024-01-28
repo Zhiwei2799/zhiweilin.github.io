@@ -3,7 +3,7 @@ layout: post
 math: true
 ---
 
-Linear regression is a statistical method used to model the linear relationship between a dependent variable $y$ and one or more independent variables $x_{1}, x_{2}, \ldots, x_{p}$. It is simple, yet it remains one of the most useful analytical tools. While it may not always yield the highest accuracy, its interpretability is unparalleled.
+Linear regression is a statistical method used to model the linear relationship between a dependent variable y and one or more independent variables $$ x_{1}, x_{2}, \ldots, x_{p} $$. It is simple, yet it remains one of the most useful analytical tools. While it may not always yield the highest accuracy, its interpretability is unparalleled.
 
 The linear regression model takes the form:
 
@@ -11,10 +11,10 @@ $$ y = \beta_{0} + \beta_{1} x_{1} + \beta_{2} x_{2} + \cdots + \beta_{p} x_{p} 
 
 where:
 
-- $y$ is the dependent variable
-- $x_1, x_2, \ldots, x_p$ are the independent variables
-- $\beta_0, \beta_1, \ldots, \beta_p$ are the coefficients (parameters) of the model
-- $\varepsilon$ is the error term, which represents the difference between the observed and predicted values of $y$.
+- y is the dependent variable
+- $$ x_1, x_2, \ldots, x_p $$ are the independent variables
+- $$ \beta_0, \beta_1, \ldots, \beta_p $$ are the coefficients (parameters) of the model
+- $$ \varepsilon $$ is the error term, which represents the difference between the observed and predicted values of y.
 
 Often these $n$ equations are stacked together and written in matrix notation as:
 
