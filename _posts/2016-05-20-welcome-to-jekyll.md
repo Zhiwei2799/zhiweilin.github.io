@@ -81,7 +81,8 @@ These methods help address the issue of multicollinearity and improve the accura
 ## Maximum Likilihood Estimation 
 
 $$
-f(y_i | x_i, \beta_0, \beta_1, \ldots, \beta_p) = \frac{1}{\sqrt{2 \pi \sigma^2}} \exp\left(-\frac{(y_i - (\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_p x_{ip}))^2}{2\sigma^2}\right)
+f(y_i | x_i, \beta_0, \beta_1, \ldots, \beta_p) = 
+\frac{1}{\sqrt{2 \pi \sigma^2}} \exp\left(-\frac{(y_i - (\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_p x_{ip}))^2}{2\sigma^2}\right)
 $$
 
 The likelihood function for the entire dataset $$\{(x_i, y_i)\}_{i=1}^n $$ is the product of the likelihoods of individual observations:
@@ -104,4 +105,8 @@ Solving this system of equations gives us the maximum likelihood estimates $$ \h
 This approach provides estimates that maximize the likelihood of observing the given data under the assumed linear regression model. When $$f_θ$$ is a normal distribution with zero mean and variance θ, the resulting estimate is identical to the least square estimation.
 
 ## Other Estimation Technique (quantile regression)
-other estimation techniques like quantile regression are also very useful. It focuses on the conditional quantiles of y given X rather than the conditional mean of y given X. Least square estimation is highly affected by outliers, but quantile regression is more robust to outliers. Quantile regression is very useful in some real-world data with outliers. 
+Other estimation techniques like quantile regression are also very useful. It focuses on the conditional quantiles of y given X rather than the conditional mean of y given X. Least square estimation is highly affected by outliers, but quantile regression is more robust to outliers. Quantile regression is very useful in some real-world data with outliers. 
+
+## Convexity
+A good error function is required to be convex, which has only one minimum point. This property simplifies the optimization process, as there is no risk of getting stuck in a suboptimal solution. Mathematicians/Statisticians put much effort into designing a convex error function. 
+In addition, the least square error is the quadratic objective function, while the quantile error function is the linear objective function. In terms of efficiency, linear objective function like quantile regression runs much faster than least-squared regression in large datasets. 
