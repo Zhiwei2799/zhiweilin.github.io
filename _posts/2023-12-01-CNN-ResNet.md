@@ -10,17 +10,17 @@ Neural Network is inspired by biological phenomena in the human brain - how info
 ### Gradient Descent:
 Gradient Descent is a first-order iterative algorithm for finding a local minimum. It plays a crucial role in a neural network architecture. There are three types of gradient descent:
 $$ \theta_{i+1} = \theta_i - \alpha \nabla J(\theta_i) $$
-where \( \alpha \) is the learning rate.
+where $$ \alpha $$ is the learning rate.
 - Batch GD: Uses all data points for parameter updates.
 - Stochastic GD: Uses one random data point for updates.
 - **Mini Batch GD**: Uses a few random data points for updates.
 
 ![gradient-descent-learning-rate](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/62ad48a5-0303-4895-9909-91fb08bb6412)
 
-The learning rate \( \alpha \) cannot be too large; otherwise, it will diverge. We generally adjust the learning rate after several epochs.
+The learning rate $$ \alpha $$ cannot be too large; otherwise, it will diverge. We generally adjust the learning rate after several epochs.
 
 ### Activation Function
-There are several commonly used activation functions such as ReLU, tanH, and the Sigmoid functions. Each of these functions has specific usage.
+There are several commonly used activation functions such as ReLU, tanH, and the Sigmoid functions. Each of these functions has a specific usage.
 
 ![Activation functions](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/81de4de6-6986-4d64-b07a-5713d4265b7a)
 
@@ -55,6 +55,6 @@ It's particularly useful for finding patterns in images to recognize objects.
 ![Kernel, Stride, and Padding](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/5539aec8-7fe1-4b70-a2c7-25c5fa6e6775)
 
 ## ResNet
-ResNet is the neural network architecture proposed by Kaiming He in the paper [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385). It is widely known for its outstanding performance in image recognition. One of the problems ResNets solve is the famous known vanishing gradient. This is because when the network is too deep, the gradients from where the loss function is calculated easily shrink to zero after several applications of the chain rule. This results in the weights never updating their values, and therefore, no learning is being performed.
+ResNet is the neural network architecture proposed by Kaiming He in the paper [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385). It is widely known for its outstanding performance in image recognition. One of the problems ResNets solves is the famous known vanishing gradient. This is because when the network is too deep, the gradients from where the loss function is calculated easily shrink to zero after several applications of the chain rule. This results in the weights never updating their values, and therefore, no learning is being performed.
 
 ![ResNet Architecture](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/c654b38f-fa26-4316-b11f-658c598c82fe)
