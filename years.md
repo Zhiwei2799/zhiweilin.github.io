@@ -9,6 +9,7 @@ permalink: /Project/
   - Integrated a self-attention layer into ResNet, utilizing it to forecast stock price movement (loss, gain, or flat) in the next 5 days with an accuracy of 42%, which is higher than the stochastic indicator’s accuracy of 33%.
     
 [ResNet Report.pdf](https://github.com/zhiweilin27/zhiweilin27.github.io/files/14082403/ResNet.Report.pdf)
+
 [Code](https://github.com/zhiweilin27/ResNet)
 
 ## Principal Component Analysis (PCA) vs Auto-encoder (AE) for Handwritten Digit Images from USPS
