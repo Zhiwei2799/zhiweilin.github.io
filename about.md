@@ -4,5 +4,13 @@ title: About Me
 permalink: /About Me/
 ---
 
-<p>Hi, I'm Zhiwei Lin, currently a second-year master's student at Stony Brook University, majoring in Applied Mathematics and Statistics. I am interested in data science and actuarial science. I've gained valuable experience through various projects and have successfully passed multiple SOA actuarial exams, including P, FM, IFM, STAM, and SRM. I earned my bachelor's degree in Biology and Applied Mathematics and Statistics from Stony Brook University in 2021.</p>
+I am Zhiwei Lin, currently a second-year master's student at Stony Brook University studying Applied Mathematics and Statistics. I am actively seeking internship or entry-level opportunities in data science or actuarial science fields. I have passed multiple SOA actuarial exams - P, FM, IFM, STAM, and SRM. and have completed several data analysis, finance, and coding projects
+
+Skills:
+Math/Statistics/CS: regression theory, time series, decision trees, deep learning, and natural language processing. 
+
+Quantitative Finance: the Black-Scholes model, CAPM, option pricing, and portfolio optimization theory. 
+
+Coding: R and Python programming languages.
+
 
