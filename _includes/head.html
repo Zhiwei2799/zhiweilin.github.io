@@ -28,9 +28,9 @@
     let filename = "";
     if (hour >= 5 && hour < 7) {
       filename = "{{ '/assets/css/skin-sunrise.css' | relative_url }}";
-    } else if (hour >= 7 && hour < 17) {
+    } else if (hour >= 7 && hour < 19) {
       filename = "{{ '/assets/css/skin-daylight.css' | relative_url }}";
-    } else if (hour >= 17 && hour < 19) {
+    } else if (hour >= 19 && hour < 21) {
       filename = "{{ '/assets/css/skin-sunset.css' | relative_url }}";
     } else {
       filename = "{{ '/assets/css/skin-midnight.css' | relative_url }}";
