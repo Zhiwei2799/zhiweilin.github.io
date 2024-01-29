@@ -35,4 +35,4 @@ permalink: /Project/
 [Report.pdf](https://github.com/zhiweilin27/zhiweilin27.github.io/files/14082039/Project.Report.pdf)
 
 
-As well as many other unlisted projects for enhancing learning and coding skills.
+As well as many other unlisted projects for enhancing data analysis and coding skills.
