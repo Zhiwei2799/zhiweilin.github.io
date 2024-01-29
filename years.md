@@ -4,6 +4,7 @@ title: Project Portfolios
 toc: true
 permalink: /Project/
 ---
+
 ## [Residual Neural Network (ResNet) Project](https://github.com/zhiweilin27/ResNet)
   - Built a ResNet model, achieving 94% on the CIFAR-10 dataset for image classification
   - Integrated a self-attention layer into ResNet, utilizing it to forecast stock price movement (loss, gain, or flat) in the next 5 days with an accuracy of 42%, which is higher than the stochastic indicator’s accuracy of 33%.
