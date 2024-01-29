@@ -8,8 +8,7 @@ permalink: /Project/
   - Built a ResNet model, achieving 94% on the CIFAR-10 dataset for image classification
   - Integrated a self-attention layer into ResNet, utilizing it to forecast stock price movement (loss, gain, or flat) in the next 5 days with an accuracy of 42%, which is higher than the stochastic indicator’s accuracy of 33%.
     
-[Report](https://github.com/zhiweilin27/zhiweilin27.github.io/files/14082021/ResNet_Report.pdf)
-
+[ResNet Report.pdf](https://github.com/zhiweilin27/zhiweilin27.github.io/files/14082403/ResNet.Report.pdf)
 [Code](https://github.com/zhiweilin27/ResNet)
 
 ## Principal Component Analysis (PCA) vs Auto-encoder (AE) for Handwritten Digit Images from USPS
@@ -32,7 +31,7 @@ permalink: /Project/
   - Performed a paired t-test to show there was not a significant difference in profit of Fortune 100 companies before the pandemic(2019) and after the pandemic (2021)
   - Performed a multiple linear regression to test which variables, such as revenue, asset size, market capitalization, size of the workforce, and the headquarters state political party, were responsible for the change in profit of those companies during these periods. Variable selection was performed based on the adjusted R squared.
     
-[Report](https://github.com/zhiweilin27/zhiweilin27.github.io/files/14082039/Project.Report.pdf)
+[Report.pdf](https://github.com/zhiweilin27/zhiweilin27.github.io/files/14082039/Project.Report.pdf)
 
 
 As well as many other unlisted projects for enhancing learning and coding skills.
