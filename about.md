@@ -12,6 +12,6 @@ Math/Statistics/CS: regression theory, time series, decision trees, deep learnin
 
 Quantitative Finance: the Black-Scholes model, CAPM, option pricing, and portfolio optimization theory. 
 
-Coding: R and Python programming languages.
+Coding: R and Python programming languages. <i class="fa-solid fa-keyboard"></i>
 
 
