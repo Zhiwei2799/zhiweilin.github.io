@@ -17,7 +17,7 @@ where:
 - $$ \beta_0, \beta_1, \ldots, \beta_p $$ are the coefficients (parameters) of the model
 - $$ \varepsilon $$ is the error term, which represents the difference between the observed and predicted values of y.
 
-Often these $n$ equations are stacked together and written in matrix notation as:
+Often these $$n$$ equations are stacked together and written in matrix notation as:
 
 $$ \mathbf{y} = \mathbf{X} \mathbf{\beta} + \mathbf{\varepsilon} $$
 
@@ -69,7 +69,7 @@ $$ \Rightarrow w_{optimial} = (X^TX)^{-1}X^T y $$
 where $$ X^TX $$ is invertible.
 
 
-It's known that $$ x_{1}, x_{2}, \ldots, x_{p} $$ need to be independent of each other for the matrix $X$ to be invertible. In practice, we often assume that variables are independent from each other, even if they exhibit small correlations. However, if variables are strongly correlated (dependent), they shouldn't be included in the linear model, as they will lead to incorrect results. 
+It's known that $$ x_{1}, x_{2}, \ldots, x_{p} $$ need to be independent of each other for the matrix $$X$$ to be invertible. In practice, we often assume that variables are independent from each other, even if they exhibit small correlations. However, if variables are strongly correlated (dependent), they shouldn't be included in the linear model, as they will lead to incorrect results. 
 
 There are several methods to handle multiple dependent variables in regression models:
 
@@ -85,6 +85,7 @@ f(y_i | x_i, \beta_0, \beta_1, \ldots, \beta_p) &= \\
 &\frac{1}{\sqrt{2 \pi \sigma^2}} \exp\left(-\frac{(y_i - (\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_p x_{ip}))^2}{2\sigma^2}\right)
 \end{align*}
 $$
+
 The likelihood function for the entire dataset $$\{(x_i, y_i)\}_{i=1}^n $$ is the product of the likelihoods of individual observations:
 
 $$
