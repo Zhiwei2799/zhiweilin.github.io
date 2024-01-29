@@ -5,8 +5,8 @@ toc: true
 permalink: /Project/
 ---
 ## AnalysisLin CRAN R Package
-  - Developed a personal exploratory data analysis (EDA) R package, \textbf{AnalysisLin}. It has been uploaded to the CRAN repository. 
-  - A quick and effective data exploration toolkit. It provides essential features, including a \textbf{descriptive statistics table} for a quick overview of your dataset, \textbf{interactive distribution plots} to visualize variable patterns, \textbf{Principal Component Analysis} for dimensionality reduction and feature analysis, \textbf{missing value imputation methods}, and \textbf{correlation analysis}
+  - Developed a personal exploratory data analysis (EDA) R package, AnalysisLin. It has been uploaded to the CRAN repository. 
+  - A quick and effective data exploration toolkit. It provides essential features, including a descriptive statistics table for a quick overview of your dataset, interactive distribution plots to visualize variable patterns, Principal Component Analysis for dimensionality reduction and feature analysis, missing value imputation methods, and correlation analysis
 
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [CRAN Website](https://cran.r-project.org/web/packages/AnalysisLin/index.html)
