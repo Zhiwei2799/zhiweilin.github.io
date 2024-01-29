@@ -26,7 +26,7 @@ permalink: /Project/
 ## [Insurance Cost Regression]
   - Applied the Decision Tree-based methods - Random Forest and XGBoost to demonstrate that the variable smoker is the most significant factor in determining insurance charges.
     
-[Code]((https://zhiweilin27.github.io/Data-analysis-in-R/Insurance-Cost.html)
+[Code](https://zhiweilin27.github.io/Data-analysis-in-R/Insurance-Cost.html)
 
 ## [The Impact of COVID-19 To the Profit of Fortune 100 Companies]
   - Performed a paired t-test to show there was not a significant difference in profit of Fortune 100 companies before the pandemic(2019) and after the pandemic (2021)
