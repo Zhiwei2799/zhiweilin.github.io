@@ -8,7 +8,7 @@ permalink: /Project/
   - Built a ResNet model, achieving 94% on the CIFAR-10 dataset for image classification
   - Integrated a self-attention layer into ResNet, utilizing it to forecast stock price movement (loss, gain, or flat) in the next 5 days with an accuracy of 42%, which is higher than the stochastic indicator’s accuracy of 33%.
     
-[Report](https://github.com/zhiweilin27/zhiweilin27.github.io/files/14082021/AMS_691.1.pdf{:target="_blank"})
+[Report](https://github.com/zhiweilin27/zhiweilin27.github.io/files/14082021/AMS_691.1.pdf){target="_blank"}
 
 [Code](https://github.com/zhiweilin27/ResNet)
 
