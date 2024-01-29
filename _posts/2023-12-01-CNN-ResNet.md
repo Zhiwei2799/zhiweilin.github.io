@@ -29,6 +29,7 @@ As in linear regression notes, we know optimization requires the loss function t
 
 ### Forward Propagation
 Propagating the input signal through layers to get the output.
+
 $$
 \begin{align*}
     f_0 &= x \\
@@ -39,6 +40,7 @@ $$
 
 ### Backward Propagation
 **Backpropagation**: Adjusting the parameters based on the gradient of the error with respect to the network's parameters. Chain Rule is involved.
+
 $$ \frac{\partial \text{error}}{\partial \theta_i} $$
 
 ## CNN Architecture
