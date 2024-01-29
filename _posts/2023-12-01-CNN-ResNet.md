@@ -2,6 +2,7 @@
 layout: post
 math: true
 toc: true
+title = "CNN and ResNet"
 ---
 
 ## Neural Network Overview
