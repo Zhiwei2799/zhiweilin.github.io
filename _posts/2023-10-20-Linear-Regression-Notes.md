@@ -3,7 +3,7 @@ layout: post
 math: true
 toc: true
 ---
-## Linear Regression Overview
+# Linear Regression Overview
 Linear regression is a statistical method used to model the linear relationship between a dependent variable y and one or more independent variables $$ x_{1}, x_{2}, \ldots, x_{p} $$. It is simple, yet it remains one of the most useful analytical tools. While it may not always yield the highest accuracy, its interpretability is unparalleled.
 
 The linear regression model takes the form:
@@ -43,7 +43,7 @@ $$
 \mathbf{\varepsilon} = \begin{pmatrix} \varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n \end{pmatrix}
 $$
 
-### Least Square Estimation
+## Least Square Estimation
 
 Least square error tries to minimize the sum of square residuals: $$ \varepsilon = \sum(y-\hat{y})^2 $$.
 
@@ -78,7 +78,7 @@ There are several methods to handle multiple dependent variables in regression m
 
 These methods help address the issue of multicollinearity and improve the accuracy and reliability of the regression model.
 
-#### Derivation of the Coefficients
+### Derivation of the Coefficients
 
 Let's simplify the derivation for a regression with only one predictor:
 
@@ -86,29 +86,33 @@ $$
 \hat{y} = a + bx
 $$
 
-Then, the error function \( E \) can be expressed as:
+Then, the error function E  can be expressed as:
 
 $$
 E = \sum_{i=1}^{n}(y_i - \hat{y_i})^2 = \sum_{i=1}^{n}(y_i - a - bx_i)^2
 $$
 
-To minimize the value of \( E \):
+To minimize the value of E:
 
 $$
-\frac{\partial E}{\partial a} = 0 \\
-0 = -2 \sum_{i=1}^{n}(y_i - a - bx_i) \\
-0 = \sum_{i=1}^{n}(y_i - a - bx_i) \\
-0 = \sum_{i=1}^{n} y_i - \sum_{i=1}^{n} a - b \sum_{i=1}^{n} x_i \\
-n(a) = \sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i \\
-a = \bar{y} - b\bar{x}
+\begin{align*}
+0 &= \frac{\partial E}{\partial a} \\
+0 &= -2 \sum_{i=1}^{n}(y_i - a - bx_i) \\
+0 &= \sum_{i=1}^{n}(y_i - a - bx_i) \\
+0 &= \sum_{i=1}^{n} y_i - \sum_{i=1}^{n} a - b \sum_{i=1}^{n} x_i \\
+n(a) &= \sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i \\
+a &= \bar{y} - b\bar{x}
+\end{align*}
 $$
 
 $$
-\frac{\partial E}{\partial b} = 0 \\
-0 = -2 \sum_{i=1}^{n} (x_i)(y_i - a - bx_i) \\
-0 = \sum_{i=1}^{n} (x_i y_i - x_i \bar{y} - b x_i \bar{x} - b x_i^2) \\
-b \sum_{i=1}^{n} (x_i \bar{x} - x_i^2) = \sum_{i=1}^{n} (x_i y_i - x_i \bar{y}) \\
-b = \frac{\sum_{i=1}^{n} (x_i y_i - x_i \bar{y})}{\sum_{i=1}^{n} (x_i \bar{x} - x_i^2)}
+\begin{align*}
+0 &= \frac{\partial E}{\partial b} \\
+0 &= -2 \sum_{i=1}^{n} (x_i)(y_i - a - bx_i) \\
+0 &= \sum_{i=1}^{n} (x_i y_i - x_i \bar{y} - b x_i \bar{x} - b x_i^2) \\
+b \sum_{i=1}^{n} (x_i \bar{x} - x_i^2) &= \sum_{i=1}^{n} (x_i y_i - x_i \bar{y}) \\
+b &= \frac{\sum_{i=1}^{n} (x_i y_i - x_i \bar{y})}{\sum_{i=1}^{n} (x_i \bar{x} - x_i^2)}
+\end{align*}
 $$
 
 Alternatively:
@@ -117,7 +121,7 @@ $$
 b = \frac{\sum_{i=1}^{n} x_{i} y_{i} - n \bar{x} \bar{y}}{\sum_{i=1}^{n} x_{i}^{2} - n \bar{x}^{2}}
 $$
 
-### Maximum Likilihood Estimation 
+## Maximum Likilihood Estimation 
 $$
 \begin{align*}
 f(y_i | x_i, \beta_0, \beta_1, \ldots, \beta_p) &= \\
@@ -144,9 +148,9 @@ Solving this system of equations gives us the maximum likelihood estimates $$ \h
 
 This approach provides estimates that maximize the likelihood of observing the given data under the assumed linear regression model. When $$f_θ$$ is a normal distribution with zero mean and variance θ, the resulting estimate is identical to the least square estimation.
 
-### Other Estimation Technique (quantile regression)
+## Other Estimation Technique (quantile regression)
 Other estimation techniques like quantile regression are also very useful. It focuses on the conditional quantiles of y given X rather than the conditional mean of y given X. Least square estimation is highly affected by outliers, but quantile regression is more robust to outliers. Quantile regression is very useful in some real-world data with outliers. 
 
-### Convexity
+## Convexity
 A good error function is required to be convex, which has only one minimum point. This property simplifies the optimization process, as there is no risk of getting stuck in a suboptimal solution. Mathematicians/Statisticians put much effort into designing a convex error function. 
 In addition, the least square error is the quadratic objective function, while the quantile error function is the linear objective function. In terms of efficiency, linear objective function like quantile regression runs much faster than least-squared regression in large datasets. 
