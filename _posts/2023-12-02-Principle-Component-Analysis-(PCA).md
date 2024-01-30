@@ -38,7 +38,10 @@ Thus, a vector $$ \alpha_1 $$ that gives maximum variance corresponds to the eig
 For the second vector $$ \alpha_2 $$, it is also required to be uncorrelated with $$ \alpha_1 $$:
 
 $$
-\max(\text{cov}(\alpha_{2}^{T} X)) = \max(\alpha_{2}^{T} X \alpha_2) \text{        such that } ||\alpha_2||^2 = 1 \text{ and } \alpha_{1}^{T} \alpha_2 = 0 \\
+\max(\text{cov}(\alpha_{2}^{T} X)) = \max(\alpha_{2}^{T} X \alpha_2) \text{        such that } ||\alpha_2||^2 = 1 \text{ and } \alpha_{1}^{T} \alpha_2 = 0 
+$$
+
+$$
 \Rightarrow L(\alpha_2, \lambda, \lambda_2) = \alpha_21}^{T} X \alpha_2 - \lambda(||\alpha_{2}||^2 - 1) - \lambda_2(\alpha_{1}^{T} \alpha_2)
 $$
 
