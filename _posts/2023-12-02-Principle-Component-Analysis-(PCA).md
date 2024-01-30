@@ -63,4 +63,5 @@ Signular Value Decompostion is more stable than Eigendecomposition, especially w
 doing direct PCA is very inefficient, so singular value decomposition (SVD) is perferred. 
 
 [some good lecture notes found](https://graphics.stanford.edu/courses/cs233-20-spring/ReferencedPapers/LectureNotes-PCA.pdf)
+
 [lecture notes](https://people.tamu.edu/~sji/classes/PCA.pdf)
