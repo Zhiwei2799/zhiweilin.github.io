@@ -7,13 +7,13 @@ toc: true
 ## Principal Components Overview
 
 Suppose we have $$ X $$ as a vector of $$p $$ random variables, then the covariance matrix $$ V$$ is $$ p \times p $$. 
-We want to find a vector $$ \alpha = (\alpha_1, \alpha_2, ..., \alpha_p) $$ such that $$ \alpha^T X $$ gives maximum variance.
+We want to find a vector $$ \alpha_1 = (\alpha_11, \alpha_12, ..., \alpha_1p) $$ such that $$ \alpha_{1}^{T} X $$ gives maximum variance.
 
 In mathematical terms, it is expressed as:
 
 $$
 \begin{align*}
-\max(\text{cov}(\alpha^T X)) &= \max(\alpha^T X \alpha) \text{ such that } ||\alpha||^2 = 1 \\
+\max(\text{cov}(\alpha_{1}^{T} X)) &= \max(\alpha_{1}^{T} X \alpha_{1}) \text{        such that } ||\alpha_{1}||^2 = 1 \\
 &\Rightarrow L(\alpha, \lambda) = \alpha^T X \alpha - \lambda(||\alpha||^2 - 1)
 \end{align*}
 $$
@@ -21,18 +21,25 @@ $$
 Taking derivatives with respect to $$ \lambda $$ and $$ \alpha $$:
 
 $$
-\frac{\delta L}{\delta \lambda} = ||\alpha||^2 - 1 = 0 \\
-\frac{\delta L}{\delta \alpha} = 2(V\alpha - \lambda \alpha) = 0 \Rightarrow V\alpha = \lambda \alpha
+\frac{\delta L}{\delta \lambda} = ||\alpha_{1}||^2 - 1 = 0 
 $$
 
-Therefore, the maximum value for $$ ||\alpha||^2 = 1 \) is \( \lambda $$. 
-Thus, a vector $$ \alpha $$ that gives maximum variance corresponds to the eigenvector for $$ \lambda $$.
-
-For the second vector $$ \alpha_2 $$, it is also required to be uncorrelated with $$ \alpha $$:
+$$
+\frac{\delta L}{\delta \alpha_1} = 2(V\alpha_{1}- \lambda \alpha_{1}) = 0 
+$$
 
 $$
-\max(\text{cov}(\alpha^T X)) = \max(\alpha^T X \alpha) \text{ such that } ||\alpha||^2 = 1 \text{ and } \alpha^T \alpha_2 = 0 \\
-\Rightarrow L(\alpha, \lambda, \lambda_2) = \alpha^T X \alpha - \lambda(||\alpha||^2 - 1) - \lambda_2(\alpha^T \alpha_2)
+\Rightarrow V\alpha_{1} = \lambda \alpha_{1}
+$$
+
+Therefore, the maximum value for $$ ||\alpha_1||^2 = 1 $$ is $$ \lambda_1 $$. 
+Thus, a vector $$ \alpha_1 $$ that gives maximum variance corresponds to the eigenvector for $$ \lambda_1 $$.
+
+For the second vector $$ \alpha_2 $$, it is also required to be uncorrelated with $$ \alpha_1 $$:
+
+$$
+\max(\text{cov}(\alpha_{2}^{T} X)) = \max(\alpha_{2}^{T} X \alpha_2) \text{        such that } ||\alpha_2||^2 = 1 \text{ and } \alpha_{1}^{T} \alpha_2 = 0 \\
+\Rightarrow L(\alpha_2, \lambda, \lambda_2) = \alpha_21}^{T} X \alpha_2 - \lambda(||\alpha_{2}||^2 - 1) - \lambda_2(\alpha_{1}^{T} \alpha_2)
 $$
 continues this procedure will find all $$(lambda_k, alpha_k)$$ for kth P.C. 
 
