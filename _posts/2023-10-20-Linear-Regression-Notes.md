@@ -93,7 +93,7 @@ E = \sum_{i=1}^{n}(y_i - \hat{y_i})^2 = \sum_{i=1}^{n}(y_i - a - bx_i)^2
 $$
 
 To minimize the value of E:
-
+take derivative respect to a:
 $$
 \begin{align*}
 0 &= \frac{\partial E}{\partial a} \\
@@ -104,7 +104,9 @@ n(a) &= \sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i \\
 a &= \bar{y} - b\bar{x}
 \end{align*}
 $$
+we find optimal $$ a = \bar{y} - b\bar{x} $$
 
+then take derivative respect to b:
 $$
 \begin{align*}
 0 &= \frac{\partial E}{\partial b} \\
