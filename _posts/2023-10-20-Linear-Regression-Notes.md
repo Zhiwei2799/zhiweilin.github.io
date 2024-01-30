@@ -125,15 +125,15 @@ Alternatively:
 
 $$
 \begin{align*}
-b = \frac{\sum_{i=1}^{n} x_{i} y_{i} - n \bar{x} \bar{y}}{\sum_{i=1}^{n} x_{i}^{2} - n \bar{x}^{2}} 
+b & = \frac{\sum_{i=1}^{n} x_{i} y_{i} - n \bar{x} \bar{y}}{\sum_{i=1}^{n} x_{i}^{2} - n \bar{x}^{2}} 
 & = \frac{\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})}{\sum_{i=1}^{n}(x_i-\bar{x})^2
 \end{align*}
 $$
 
 ### The Coefficient of Determination R^2
 
-- SSE is error(residual) sum of square, $$\sum_{i=1}^{n}(y_i - \hat{y_i})^2$$, the value we trying to minimize. 
-- SSR is regression sum of squares, $$\sum_{i=1}^{n}(\hat{\hat{y_i}- \bar{y})^2$$, the value we tring to maximize.
+- SSE is error(residual) sum of square, $$\sum_{i=1}^{n}(y_i - \hat{y_i})^2 $$ , the value we trying to minimize. 
+- SSR is regression sum of squares, $$\sum_{i=1}^{n}(\hat{\hat{y_i}- \bar{y})^2$$ , the value we tring to maximize.
 - SST is total sum of square, $$\sum_{i=1}^{n}(\hat{y_i- \bar{y})^2$$
 
 lossly speaking, $$R^2$$ is how many precentage of variance being captured by the model. Therefore, $$R^2 = \frac{SSR}{SST} or 1-\frac{SSE}{SST} $$
