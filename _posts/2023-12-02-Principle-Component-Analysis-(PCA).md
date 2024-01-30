@@ -14,11 +14,11 @@ In mathematical terms, it is expressed as:
 $$
 \begin{align*}
 \max(\text{cov}(\alpha_{1}^{T} X)) &= \max(\alpha_{1}^{T} X \alpha_{1}) \text{        such that } ||\alpha_{1}||^2 = 1 \\
-&\Rightarrow L(\alpha, \lambda) = \alpha^T X \alpha - \lambda(||\alpha||^2 - 1)
+&\Rightarrow L(\alpha_1, \lambda) = \alpha_{1}^{T} X \alpha_1 - \lambda(||\alpha_{1}||^2 - 1)
 \end{align*}
 $$
 
-Taking derivatives with respect to $$ \lambda $$ and $$ \alpha $$:
+Taking derivatives with respect to $$ \lambda $$ and $$ \alpha_1$$:
 
 $$
 \frac{\delta L}{\delta \lambda} = ||\alpha_{1}||^2 - 1 = 0 
