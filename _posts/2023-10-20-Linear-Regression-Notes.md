@@ -78,6 +78,45 @@ There are several methods to handle multiple dependent variables in regression m
 
 These methods help address the issue of multicollinearity and improve the accuracy and reliability of the regression model.
 
+#### Derivation of the Coefficients
+
+Let's simplify the derivation for a regression with only one predictor:
+
+$$
+\hat{y} = a + bx
+$$
+
+Then, the error function \( E \) can be expressed as:
+
+$$
+E = \sum_{i=1}^{n}(y_i - \hat{y_i})^2 = \sum_{i=1}^{n}(y_i - a - bx_i)^2
+$$
+
+To minimize the value of \( E \):
+
+$$
+\frac{\partial E}{\partial a} = 0 \\
+0 = -2 \sum_{i=1}^{n}(y_i - a - bx_i) \\
+0 = \sum_{i=1}^{n}(y_i - a - bx_i) \\
+0 = \sum_{i=1}^{n} y_i - \sum_{i=1}^{n} a - b \sum_{i=1}^{n} x_i \\
+n(a) = \sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i \\
+a = \bar{y} - b\bar{x}
+$$
+
+$$
+\frac{\partial E}{\partial b} = 0 \\
+0 = -2 \sum_{i=1}^{n} (x_i)(y_i - a - bx_i) \\
+0 = \sum_{i=1}^{n} (x_i y_i - x_i \bar{y} - b x_i \bar{x} - b x_i^2) \\
+b \sum_{i=1}^{n} (x_i \bar{x} - x_i^2) = \sum_{i=1}^{n} (x_i y_i - x_i \bar{y}) \\
+b = \frac{\sum_{i=1}^{n} (x_i y_i - x_i \bar{y})}{\sum_{i=1}^{n} (x_i \bar{x} - x_i^2)}
+$$
+
+Alternatively:
+
+$$
+b = \frac{\sum_{i=1}^{n} x_{i} y_{i} - n \bar{x} \bar{y}}{\sum_{i=1}^{n} x_{i}^{2} - n \bar{x}^{2}}
+$$
+
 ### Maximum Likilihood Estimation 
 $$
 \begin{align*}
