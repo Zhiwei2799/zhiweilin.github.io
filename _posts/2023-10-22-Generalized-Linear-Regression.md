@@ -31,7 +31,7 @@ Link functions connect the response distribution's mean to the predictors. It's 
 
 $$ g(\mu) = X\beta $$
 
-where $$ g(\u00B7) $$ is the link function, $$ \mu $$ is the response mean, $$ X $$ is the matrix of predictors, and $$ w $$ is the coefficients.
+where $$ g(\cdot) $$ is the link function, $$ \mu $$ is the response mean, $$ X $$ is the matrix of predictors, and $$ w $$ is the coefficients.
 
 The monotonicity property allows us to invert the link function and estimate the response mean $$\mu$$ as soon as the parameter vector $$\beta$$ has been estimated from the data:
 
