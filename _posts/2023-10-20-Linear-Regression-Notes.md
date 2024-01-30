@@ -64,7 +64,7 @@ $$ 	\nabla E = 2(X^TXw - X^T y) = 0 $$
 
 $$ \Rightarrow X^TXw = X^Ty $$
 
-$$ \Rightarrow w_{optimial} = (X^TX)^{-1}X^T y $$
+$$ \Rightarrow w_{optimal} = (X^TX)^{-1}X^T y $$
 
 where $$ X^TX $$ is invertible.
 
