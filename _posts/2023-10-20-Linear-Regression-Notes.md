@@ -166,8 +166,9 @@ Solving this system of equations gives us the maximum likelihood estimates $$ \h
 
 This approach provides estimates that maximize the likelihood of observing the given data under the assumed linear regression model. When $$f_θ$$ is a normal distribution with zero mean and variance θ, the resulting estimate is identical to the least square estimation.
 
-## Other Estimation Technique (quantile regression)
+## Other Estimation Technique (Quantile Regression)
 Other estimation techniques like quantile regression are also very useful. It focuses on the conditional quantiles of y given X rather than the conditional mean of y given X. Least square estimation is highly affected by outliers, but quantile regression is more robust to outliers. Quantile regression is very useful in some real-world data with outliers. 
+[Roger Koenker Quantile Regression paper](https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.15.4.143)
 
 ## Convexity
 A good error function is required to be convex, which has only one minimum point. This property simplifies the optimization process, as there is no risk of getting stuck in a suboptimal solution. Mathematicians/Statisticians put much effort into designing a convex error function. 
