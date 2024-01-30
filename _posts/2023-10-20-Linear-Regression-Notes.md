@@ -93,7 +93,9 @@ E = \sum_{i=1}^{n}(y_i - \hat{y_i})^2 = \sum_{i=1}^{n}(y_i - a - bx_i)^2
 $$
 
 To minimize the value of E:
-take derivative respect to a:
+
+take derivative respect to a
+
 $$
 \begin{align*}
 0 &= \frac{\partial E}{\partial a} \\
@@ -104,16 +106,18 @@ n(a) &= \sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i \\
 a &= \bar{y} - b\bar{x}
 \end{align*}
 $$
+
 we find optimal $$ a = \bar{y} - b\bar{x} $$
 
-then take derivative respect to b:
+then take derivative respect to b
+
 $$
 \begin{align*}
 0 &= \frac{\partial E}{\partial b} \\
 0 &= -2 \sum_{i=1}^{n} (x_i)(y_i - a - bx_i) \\
-0 &= \sum_{i=1}^{n} (x_i y_i - x_i \bar{y} - b x_i \bar{x} - b x_i^2) \\
-b \sum_{i=1}^{n} (x_i \bar{x} - x_i^2) &= \sum_{i=1}^{n} (x_i y_i - x_i \bar{y}) \\
-b &= \frac{\sum_{i=1}^{n} (x_i y_i - x_i \bar{y})}{\sum_{i=1}^{n} (x_i \bar{x} - x_i^2)}
+0 &= \sum_{i=1}^{n} (x_i y_i - x_i \bar{y} + b x_i \bar{x} - b x_i^2) \\
+b \sum_{i=1}^{n} (x_i^2 - x_i \bar{x}) &= \sum_{i=1}^{n} (x_i y_i - x_i \bar{y}) \\
+b &= \frac{\sum_{i=1}^{n} (x_i y_i - x_i \bar{y})}{\sum_{i=1}^{n} (x_i^2 - x_i \bar{x})}
 \end{align*}
 $$
 
