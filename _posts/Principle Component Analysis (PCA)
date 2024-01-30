@@ -1,0 +1,47 @@
+---
+layout: post
+math: true
+toc: true
+---
+## Principal Components Overview
+
+Suppose we have $$ X $$ as a vector of $$p $$ random variables, then the covariance matrix $$ V$$ is $$ p \times p $$. 
+We want to find a vector $$ \alpha = (\alpha_1, \alpha_2, ..., \alpha_p) $$ such that $$ \alpha^T X $$ gives maximum variance.
+
+In mathematical terms, it is expressed as:
+
+$$
+\begin{align*}
+\max(\text{cov}(\alpha^T X)) &= \max(\alpha^T X \alpha) \text{ such that } ||\alpha||^2 = 1 \\
+&\Rightarrow L(\alpha, \lambda) = \alpha^T X \alpha - \lambda(||\alpha||^2 - 1)
+\end{align*}
+$$
+
+Taking derivatives with respect to $$ \lambda $$ and $$ \alpha $$:
+
+$$
+\frac{\delta L}{\delta \lambda} = ||\alpha||^2 - 1 = 0 \\
+\frac{\delta L}{\delta \alpha} = 2(V\alpha - \lambda \alpha) = 0 \Rightarrow V\alpha = \lambda \alpha
+$$
+
+Therefore, the maximum value for $$ ||\alpha||^2 = 1 \) is \( \lambda $$. 
+Thus, a vector $$ \alpha $$ that gives maximum variance corresponds to the eigenvector for $$ \lambda $$.
+
+For the second vector $$ \alpha_2 $$, it is also required to be uncorrelated with $$ \alpha $$:
+
+$$
+\max(\text{cov}(\alpha^T X)) = \max(\alpha^T X \alpha) \text{ such that } ||\alpha||^2 = 1 \text{ and } \alpha^T \alpha_2 = 0 \\
+\Rightarrow L(\alpha, \lambda, \lambda_2) = \alpha^T X \alpha - \lambda(||\alpha||^2 - 1) - \lambda_2(\alpha^T \alpha_2)
+$$
+continues this procedure will find all $$(lambda_k, alpha_k)$$ for kth P.C. 
+
+
+Given $$ X $$ is a vector of $$ P $$ and the covariance matrix is $$ p \times p $$:
+
+Total variance = $$ \lambda_1 + \lambda_2 + \ldots + \lambda_p $$
+
+The $$ k $$th principal component explains: $$ \frac{\lambda_k}{\lambda_1 + \lambda_2 + \ldots + \lambda_p} $$
+
+The first $$ k $$ principal components explain: $$ \frac{\lambda_1 + \lambda_2 + \ldots + \lambda_k}{\lambda_1 + \lambda_2 + \ldots + \lambda_p} $$
+
+
