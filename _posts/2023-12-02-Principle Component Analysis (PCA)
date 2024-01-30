@@ -44,4 +44,15 @@ The $$ k $$th principal component explains: $$ \frac{\lambda_k}{\lambda_1 + \lam
 
 The first $$ k $$ principal components explain: $$ \frac{\lambda_1 + \lambda_2 + \ldots + \lambda_k}{\lambda_1 + \lambda_2 + \ldots + \lambda_p} $$
 
+## Eigendecomposition
+Principal component analysis (PCA) is to reduce the dimensionality of some high-dimensional data points by linearly projecting 
+them onto a lower-dimensional space while perserving maximum varinance as possible or the reconstruction error made by this projection is minimal.
+This is the same having dataset X, and perform eigendecomposition on its covriance matrix. As known, covariance matrix is symmetric, 
+eigenvalues are always possible. an eigenvector that perserve maximum variance is correponeded to largest eignevalue. 
 
+## Signular Value Decompostion
+Signular Value Decompostion is more stable than Eigendecomposition, especially when dataset has fewer data points than dimensions. 
+doing direct PCA is very inefficient, so singular value decomposition (SVD) is perferred. 
+
+[some good lecture notes found](https://graphics.stanford.edu/courses/cs233-20-spring/ReferencedPapers/LectureNotes-PCA.pdf)
+[lecture notes](https://people.tamu.edu/~sji/classes/PCA.pdf)
