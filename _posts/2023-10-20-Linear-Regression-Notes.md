@@ -137,7 +137,7 @@ $$
 - SST (Total Sum of Squares): $$\sum_{i=1}^{n} (\hat{y_i} - \bar{y})^2$$
 
 
-lossly speaking, $$R^2$$ is how many precentage of variance being captured by the model. Therefore, $$R^2 = \frac{SSR}{SST} or 1-\frac{SSE}{SST} $$
+loosely speaking, $$R^2$$ is how many precentage of variance being captured by the model. Therefore, $$R^2 = \frac{SSR}{SST} or 1-\frac{SSE}{SST} $$
 
 
 ## Maximum Likilihood Estimation 
