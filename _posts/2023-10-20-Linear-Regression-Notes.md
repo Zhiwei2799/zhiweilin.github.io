@@ -136,7 +136,7 @@ $$
 - SSR is regression sum of squares, $$\sum_{i=1}^{n}(\hat{\hat{y_i}- \bar{y})^2$$, the value we tring to maximize.
 - SST is total sum of square, $$\sum_{i=1}^{n}(\hat{y_i- \bar{y})^2$$
 
-lossly speaking, $$R^2$$ is how many precentage of variance is captured by the model. Therefore, $$R^2 = \frac{SSR}{SST} or 1-\frac{SSE}{SST} $$
+lossly speaking, $$R^2$$ is how many precentage of variance being captured by the model. Therefore, $$R^2 = \frac{SSR}{SST} or 1-\frac{SSE}{SST} $$
 
 
 ## Maximum Likilihood Estimation 
