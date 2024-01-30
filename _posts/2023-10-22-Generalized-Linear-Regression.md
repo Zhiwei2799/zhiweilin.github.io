@@ -29,9 +29,29 @@ For further details, check this [website](https://en.wikipedia.org/wiki/Exponent
 
 Link functions connect the response distribution's mean to the predictors. It's a monotonic function that links the mean of the response to a linear combination of predictors:
 
-$$ g(\mu) = Xw $$
+$$ g(\mu) = X\beta $$
 
-where $$ g() $$ is the link function, $$ \mu $$ is the response mean, $$ X $$ is the matrix of predictors, and $$ w $$ is the coefficients.
+where $$ g(\u00B7) $$ is the link function, $$ \mu $$ is the response mean, $$ X $$ is the matrix of predictors, and $$ w $$ is the coefficients.
+
+The monotonicity property allows us to invert the link function and estimate the response mean $$\mu$$ as soon as the parameter vector $$\beta$$ has been estimated from the data:
+
+$$
+\mu = g^{-1}(\eta) = g^{-1}(\beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p)
+$$
+
+The reason generalized linear regression is still considered linear regression is because the decision boundary is linearly separable. The monotonicity of the link function provides this property.
+
+The plot below is an example of decsion boundary for logistic regression
+![decision-boundary](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/ec282923-e57a-47ab-b4e2-b2419c421a51)
+
+
+### Canonical Link Function
+
+There are many possible link functions connecting response distribution's mean to the linear predictor. One comman choice of the link function is the canonical link, which sets the sysmatic component $$\eta$$ of the model equal to the paramter $$\theta$$. 
+
+$$g(\mu) = \eta = \theta$$
+![IMG_2306](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/13046288-8f30-4c03-90e3-3a7ff9626ab6)
+
 
 ## Logistic Regression
 
