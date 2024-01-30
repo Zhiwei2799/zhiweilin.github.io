@@ -42,7 +42,7 @@ $$
 $$
 
 $$
-\Rightarrow L(\alpha_2, \lambda, \lambda_2) = \alpha_21}^{T} X \alpha_2 - \lambda(||\alpha_{2}||^2 - 1) - \lambda_2(\alpha_{1}^{T} \alpha_2)
+\Rightarrow L(\alpha_2, \lambda, \lambda_2) = \alpha_{2}^{T} X \alpha_2 - \lambda(||\alpha_{2}||^2 - 1) - \lambda_2(\alpha_{1}^{T} \alpha_2)
 $$
 
 Continues this procedure will find all $$lambda_k, alpha_k$$ for kth P.C. 
