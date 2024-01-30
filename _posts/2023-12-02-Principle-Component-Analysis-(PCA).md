@@ -7,7 +7,7 @@ toc: true
 ## Principal Components Overview
 
 Suppose we have $$ X $$ as a vector of $$p $$ random variables, then the covariance matrix $$ V$$ is $$ p \times p $$. 
-We want to find a vector $$ \alpha_1 = (\alpha_11, \alpha_12, ..., \alpha_1p) $$ such that $$ \alpha_{1}^{T} X $$ gives maximum variance.
+We want to find a vector $$ \alpha_1 = (\alpha_{11}, \alpha_{12}, ..., \alpha_{1p}) $$ such that $$ \alpha_{1}^{T} X $$ gives maximum variance.
 
 In mathematical terms, it is expressed as:
 
@@ -18,7 +18,7 @@ $$
 \end{align*}
 $$
 
-Taking derivatives with respect to $$ \lambda $$ and $$ \alpha_1$$:
+Taking derivatives with respect to $$\lambda $$ and $$\alpha_1$$:
 
 $$
 \frac{\delta L}{\delta \lambda} = ||\alpha_{1}||^2 - 1 = 0 
@@ -57,14 +57,13 @@ The $$ k $$th principal component explains: $$ \frac{\lambda_k}{\lambda_1 + \lam
 The first $$ k $$ principal components explain: $$ \frac{\lambda_1 + \lambda_2 + \ldots + \lambda_k}{\lambda_1 + \lambda_2 + \ldots + \lambda_p} $$
 
 ## Eigendecomposition
-Principal component analysis (PCA) is to reduce the dimensionality of some high-dimensional data points by linearly projecting 
-them onto a lower-dimensional space while perserving maximum varinance as possible or the reconstruction error made by this projection is minimal.
-This is the same having dataset X, and perform eigendecomposition on its covriance matrix. As known, covariance matrix is symmetric, 
-eigenvalues are always possible. an eigenvector that perserve maximum variance is correponeded to largest eignevalue. 
 
-## Signular Value Decompostion
-Signular Value Decompostion is more stable than Eigendecomposition, especially when dataset has fewer data points than dimensions. 
-doing direct PCA is very inefficient, so singular value decomposition (SVD) is perferred. 
+Principal Component Analysis (PCA) aims to reduce the dimensionality of high-dimensional data points by linearly projecting them onto a lower-dimensional space while preserving as much variance as possible or minimizing the reconstruction error made by this projection. This is achieved by performing eigendecomposition on the covariance matrix V of the dataset $$X$$, such that $$ V=PDP^T $$. Since the covariance matrix is symmetric, eigenvalues in matrix D are always positive. An eigenvector that preserves maximum variance corresponds to the largest eigenvalue.
+
+## Singular Value Decomposition
+
+Singular Value Decomposition (SVD) is more stable than eigendecomposition, especially when the dataset has fewer data points than dimensions. Directly performing PCA can be inefficient, so singular value decomposition (SVD) is preferred.
+
 
 [some good lecture notes found](https://graphics.stanford.edu/courses/cs233-20-spring/ReferencedPapers/LectureNotes-PCA.pdf)
 
