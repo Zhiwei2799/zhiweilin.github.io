@@ -3,6 +3,7 @@ layout: post
 math: true
 toc: true
 ---
+
 ## Principal Components Overview
 
 Suppose we have $$ X $$ as a vector of $$p $$ random variables, then the covariance matrix $$ V$$ is $$ p \times p $$. 
