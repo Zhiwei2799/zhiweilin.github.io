@@ -19,36 +19,59 @@ Example: word "low" appear 5 times, "lowest" appear 2 times, "newer" appear 6 ti
 
 Step 1: Initial Vocabulary
 
-corpus                       vocabulary
+corpus                             vocabulary
+
 5 l o w _                      _, d, e, i, l, n, o, r, s, t, w 
+
 2 l o w e s t _
+
 6 n e w e r _
+
 3 w i d e r _
+
 2 n e w _
 
 Step 2: Count and Merge Frequent Pairs (er appear 9 times)
+
 corpus                       vocabulary
+
 5 l o w _                      _, d, e, i, l, n, o, r, s, t, w, er
+
 2 l o w e s t _
+
 6 n e w er _
+
 3 w i d er _
+
 2 n e w _
 
 step 3: continues to count and merge Frequent Pairs (er_ appear 9 times) 
+
 corpus                       vocabulary
+
 5 l o w _                      _, d, e, i, l, n, o, r, s, t, w, er, er_
+
 2 l o w e s t _
+
 6 n e w er_
+
 3 w i d er_
+
 2 n e w _
 
-step n: continues untill the max vocabulary set is reached
+step n: continues untill the max vocabulary set is reached.
+
+Algorithm:
+
 <img width="747" alt="Screenshot 2024-02-28 at 12 27 59 AM" src="https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/3dc6166e-d4fb-4cf7-bce4-0929b904b315">
 ### Implementation
 I've implemented both word tokenizer and BPE tokenier in python from scratch:
 [dataset](https://github.com/zhiweilin27/NLP/blob/main/a1_tweets.txt)
+
 [python code](https://github.com/zhiweilin27/NLP/blob/main/a1_p1_lin_112845768.py)
+
 [output](https://github.com/zhiweilin27/NLP/blob/main/a1_p1_lin_112845768_OUTPUT.txt)
+
 
 ## Logistic Regression for Word Sense Disambiguation (WSD)
 WSD is the process of identifying which sense of a word (i.e., its meaning) is used in a sentence, when the word has multiple meanings.
@@ -62,7 +85,9 @@ More Detail about logistic regression or generalized linear regression can see t
 ### Implementation:
 I've implemented both logistic regression using PyTorch for Word Sense Disambiguation (WSD) from scratch:
 [dataset](https://github.com/zhiweilin27/NLP/blob/main/a1_wsd_24_2_10.txt)
+
 [python code](https://github.com/zhiweilin27/NLP/blob/main/a1_p2_lin_112845768.py)
+
 [output](https://github.com/zhiweilin27/NLP/blob/main/a1_p1_lin_112845768_OUTPUT.txt)
 
 
