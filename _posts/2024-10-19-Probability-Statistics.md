@@ -21,4 +21,47 @@ $$
 \frac{d}{dt} F_T(t) = \int_{-\infty}^{\infty} f_X(x) \frac{d}{dt} F_Y(t - x) \, dx = \int_{-\infty}^{\infty} f_X(x) f_Y(t - x) \, dx,
 $$
 
+## Jacobian Transformation
+
+The Jacobian transformation is a powerful method used in the field of probability and statistics for variable transformation, particularly when dealing with multivariate distributions. It involves the use of the Jacobian matrix, which is a matrix of all first-order partial derivatives of a vector-valued function.
+
+### Jacobian Matrix
+
+Given a vector of random variables **X** = (X_1, X_2, ..., X_n) and a vector-valued function **Y** = (Y_1, Y_2, ..., Y_n) = **g(X)**, the Jacobian matrix **J** of **g** with respect to **X** is defined as:
+
+$$
+J = \begin{bmatrix}
+\frac{\partial Y_1}{\partial X_1} & \cdots & \frac{\partial Y_1}{\partial X_n} \\
+\vdots & \ddots & \vdots \\
+\frac{\partial Y_n}{\partial X_1} & \cdots & \frac{\partial Y_n}{\partial X_n}
+\end{bmatrix}
+$$
+
+### Jacobian Transformation Formula
+
+The probability density function (PDF) of **Y**, denoted as \(f_Y(\mathbf{y})\), can be transformed from the PDF of **X**, denoted as \(f_X(\mathbf{x})\), using the formula:
+
+$$
+f_Y(\mathbf{y}) = f_X(\mathbf{g}^{-1}(\mathbf{y})) \cdot |\det(J)|
+$$
+
+where \(|\det(J)|\) is the absolute value of the determinant of the Jacobian matrix evaluated at **X** = **g**^{-1}(\mathbf{y}).
+
+### Example
+
+Consider two random variables \(X_1, X_2\) transformed into \(Y_1, Y_2\) through functions \(g_1, g_2\). The Jacobian matrix **J** and its determinant are critical in converting the PDF \(f_{X_1, X_2}(x_1, x_2)\) to \(f_{Y_1, Y_2}(y_1, y_2)\), as shown below:
+
+$$
+J = \begin{bmatrix}
+\frac{\partial g_1}{\partial X_1} & \frac{\partial g_1}{\partial X_2} \\
+\frac{\partial g_2}{\partial X_1} & \frac{\partial g_2}{\partial X_2}
+\end{bmatrix}
+$$
+
+The determinant \(|\det(J)|\) is then used in the transformation formula to find the new PDF.
+
+
+A reference chart of common distributions and relations between them.
+<img width="552" alt="Screenshot 2024-02-27 at 10 02 05 PM" src="https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/f50f1344-947e-45c4-9800-130ff160f2d1">
+
 
