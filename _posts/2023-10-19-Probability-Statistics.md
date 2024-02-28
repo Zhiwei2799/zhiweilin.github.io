@@ -30,7 +30,7 @@ $$
 
 ## Jacobian Transformation
 
-The Jacobian transformation is a powerful method used in the field of probability and statistics for variable transformation, particularly when dealing with multivariate distributions. It involves the use of the Jacobian matrix, which is a matrix of all first-order partial derivatives of a vector-valued function.
+The Jacobian transformation is a common method used in the field of probability and statistics for variable transformation. It involves the use of the Jacobian matrix, which is a matrix of all first-order partial derivatives of a vector-valued function.
 
 ### Jacobian Matrix
 
