@@ -26,7 +26,7 @@ F_T(t) & = P(T \leq t) \\
 $$
 
 $$
-\frac{d}{dt} F_T(t) = \int_{-\infty}^{\infty} f_X(x) \frac{d}{dt} F_Y(t - x) \, dx = \int_{-\infty}^{\infty} f_X(x) f_Y(t - x) \, dx,
+\frac{d}{dt} F_T(t) = \int_{-\infty}^{\infty} f_X(x) \frac{d}{dt} F_Y(t - x) \, dx = \int_{-\infty}^{\infty} f_X(x) f_Y(t - x) \, dx
 $$
 
 ## Jacobian Transformation
