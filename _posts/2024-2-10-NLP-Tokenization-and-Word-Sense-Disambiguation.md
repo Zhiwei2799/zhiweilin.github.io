@@ -35,7 +35,7 @@ Step 2: Count and Merge Frequent Pairs (er appear 9 times)
 
 corpus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp:vocabulary
 
-5&nbsp;&nbsp;&nbsp;l o w _ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _, d, e, i, l, n, o, r, s, t, w,er
+5&nbsp;&nbsp;&nbsp;l o w _ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _, d, e, i, l, n, o, r, s, t, w, er
 
 2&nbsp;&nbsp;&nbsp; l o w e s t _
 
@@ -49,7 +49,7 @@ step 3: continues to count and merge Frequent Pairs (er_ appear 9 times)
 
 corpus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp:vocabulary
 
-5&nbsp;&nbsp;&nbsp;l o w _ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _, d, e, i, l, n, o, r, s, t, w,er,er_
+5&nbsp;&nbsp;&nbsp;l o w _ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp _, d, e, i, l, n, o, r, s, t, w, er, er_
 
 2&nbsp;&nbsp;&nbsp; l o w e s t _
 
@@ -64,7 +64,7 @@ Algorithm:
 
 <img width="747" alt="Screenshot 2024-02-28 at 12 27 59 AM" src="https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/3dc6166e-d4fb-4cf7-bce4-0929b904b315">
 ### Implementation
-I've implemented both word tokenizer and BPE tokenier in python from scratch:
+I've implemented both word tokenizer and BPE tokenizer in python from scratch:
 
 [dataset](https://github.com/zhiweilin27/NLP/blob/main/a1_tweets.txt)
 
@@ -74,13 +74,13 @@ I've implemented both word tokenizer and BPE tokenier in python from scratch:
 
 
 ## Logistic Regression for Word Sense Disambiguation (WSD)
-WSD is the process of identifying which sense of a word (i.e., its meaning) is used in a sentence, when the word has multiple meanings.
-For example the word "return" has different meaning such as:
+WSD is the process of identifying which sense of a word (i.e., its meaning) is used in a sentence when the word has multiple meanings.
+For example, the word "return" has different meanings such as:
 1. come back to a place or situation.
 2. To yield a profit or result.
-This task is crucial for many natural language processing (NLP) applications, such as machine translation, information retrieval, and text understanding. Logistic Regression is simple (easy to interpret) and useful model to identify sense of a word in a sentence, but the pitfall of the logistic regression is it might not come with most accurate result. 
+This task is crucial for many natural language processing (NLP) applications, such as machine translation, information retrieval, and text understanding. Logistic Regression is a simple (easy to interpret) and useful model to identify the sense of a word in a sentence, but the pitfall of the logistic regression is it might not come with the most accurate result. 
 
-More Detail about logistic regression or generalized linear regression can see this [post](https://zhiweilin27.github.io/2023/10/22/Generalized-Linear-Regression.html#logistic-regression)
+More details about logistic regression or generalized linear regression can be seen this [post](https://zhiweilin27.github.io/2023/10/22/Generalized-Linear-Regression.html#logistic-regression)
 
 ### Implementation:
 I've implemented both logistic regression using PyTorch for Word Sense Disambiguation (WSD) from scratch:
