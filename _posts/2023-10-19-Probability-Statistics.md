@@ -12,7 +12,8 @@ An excellent introductory probability textbook
 
 ## Sum of two random variables:
 Here I just wanted to provide proof for the convolution of two independent random variables:
-T = X + Y
+$$T = X + Y $$
+
 $$
 \begin{align*}
 F_T(t) & = P(T \leq t) \\
