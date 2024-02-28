@@ -61,7 +61,7 @@ $$
 
 ### Example
 
-Consider two random variables $$X_1, X_2$$ transformed into $$Y_1, Y_2$$ through functions $$g_1, g_2$$. The Jacobian matrix **J** and its determinant are critical in converting the PDF $$f_{X_1, X_2}(x_1, x_2)$$ to$$(f_{Y_1, Y_2}(y_1, y_2)$$, as shown below:
+Consider two random variables $$X_1, X_2$$ transformed into $$Y_1, Y_2$$ through functions $$g_1, g_2$$. The Jacobian matrix **J** and its determinant are critical in converting the PDF $$f_{X_1, X_2}(x_1, x_2)$$ to $$f_{Y_1, Y_2}(y_1, y_2)$$, as shown below:
 
 $$
 J = \begin{bmatrix}
