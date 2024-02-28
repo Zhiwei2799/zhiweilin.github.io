@@ -3,7 +3,7 @@ layout: post
 math: true
 toc: true
 ---
-# Probability and statistic:
+## Probability and Statistic Notes/Textbook Recommendation:
 Probability and statistics cover a wide range of topics. Below are some excellent resources from which I learned probability:
 
 [Richard Weber's probability notes](https://www.statslab.cam.ac.uk/~rrw1/prob/prob-weber.pdf) A very good notes written by Richard Weber
