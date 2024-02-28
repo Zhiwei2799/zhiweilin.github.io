@@ -79,7 +79,8 @@ WSD is the process of identifying which sense of a word (i.e., its meaning) is u
 For example, the word "return" has different meanings such as:
 1. come back to a place or situation.
 2. To yield a profit or result.
-This task is crucial for many natural language processing (NLP) applications, such as machine translation, information retrieval, and text understanding. Logistic Regression is a simple (easy to interpret) and useful model to identify the sense of a word in a sentence, but the pitfall of the logistic regression is it might not come with the most accurate result. 
+
+This task is crucial for many natural language processing (NLP) applications, such as machine translation, information retrieval, and text understanding. Logistic Regression is a simple (easy to interpret) and useful model to identify the sense of a word in a sentence, but the pitfall of logistic regression is it might not come with the most accurate result. 
 
 More details about logistic regression or generalized linear regression can be seen this [post](https://zhiweilin27.github.io/2023/10/22/Generalized-Linear-Regression.html#logistic-regression)
 
