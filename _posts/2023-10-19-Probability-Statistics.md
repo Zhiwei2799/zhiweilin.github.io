@@ -5,16 +5,23 @@ toc: true
 ---
 # Probability and statistic:
 Probability and statistics cover a wide range of topics. Below are some excellent resources from which I learned probability:
-[Richard Weber's probability notes]https://www.statslab.cam.ac.uk/~rrw1/prob/prob-weber.pdf
+[Richard Weber's probability notes](https://www.statslab.cam.ac.uk/~rrw1/prob/prob-weber.pdf)
 A very good notes written by Richard Weber 
-[A First Course in Probability textbook ]https://www.seyedkalali.com/wp-content/uploads/2016/11/A-First-Course-in-Probability-8th-ed.-Sheldon-Ross.pdf
+[A First Course in Probability textbook ](https://www.seyedkalali.com/wp-content/uploads/2016/11/A-First-Course-in-Probability-8th-ed.-Sheldon-Ross.pdf)
 An excellent introductory probability textbook
 
 ## Sum of two random variables:
 Here I just wanted to provide proof for the convolution of two independent random variables:
 T = X + Y
 $$
-F_T(t) = P(T \leq t) = P(X + Y \leq t) = \int_{-\infty}^{\infty} \int_{-\infty}^{t-x} f(x, y) \, dy \, dx = \int_{-\infty}^{\infty} \int_{-\infty}^{t-x} f_X(x) \cdot f_Y(y) \, dy \, dx = \int_{-\infty}^{\infty} f_X(x) \int_{-\infty}^{t-x} f_Y(y) \, dy \, dx = \int_{-\infty}^{\infty} f_X(x) F_Y(t-x) \, dx,
+\begin{align*}
+F_T(t) & = P(T \leq t) \\
+& = P(X + Y \leq t) \\
+& = \int_{-\infty}^{\infty} \int_{-\infty}^{t-x} f(x, y) \, dy \, dx \\
+& = \int_{-\infty}^{\infty} \int_{-\infty}^{t-x} f_X(x) \cdot f_Y(y) \, dy \, dx \\
+& = \int_{-\infty}^{\infty} f_X(x) \int_{-\infty}^{t-x} f_Y(y) \, dy \, dx \\
+& = \int_{-\infty}^{\infty} f_X(x) F_Y(t-x) \, dx,
+\end{align*}
 $$
 
 $$
@@ -27,7 +34,7 @@ The Jacobian transformation is a powerful method used in the field of probabilit
 
 ### Jacobian Matrix
 
-Given a vector of random variables **X** = (X_1, X_2, ..., X_n) and a vector-valued function **Y** = (Y_1, Y_2, ..., Y_n) = **g(X)**, the Jacobian matrix **J** of **g** with respect to **X** is defined as:
+Given a vector of random variables **X** = $$(X_1, X_2, ..., X_n)$$ and a vector-valued function **Y** = $$(Y_1, Y_2, ..., Y_n)$$ = **g(X)**, the Jacobian matrix **J** of **g** with respect to **X** is defined as:
 
 $$
 J = \begin{bmatrix}
@@ -39,7 +46,7 @@ $$
 
 ### Jacobian Transformation Formula
 
-The probability density function (PDF) of **Y**, denoted as \(f_Y(\mathbf{y})\), can be transformed from the PDF of **X**, denoted as \(f_X(\mathbf{x})\), using the formula:
+The probability density function (PDF) of **Y**, denoted as $$f_Y(\mathbf{y})$$, can be transformed from the PDF of **X**, denoted as $$f_X(\mathbf{x})$$, using the formula:
 
 $$
 f_Y(\mathbf{y}) = f_X(\mathbf{g}^{-1}(\mathbf{y})) \cdot |\det(J)|
