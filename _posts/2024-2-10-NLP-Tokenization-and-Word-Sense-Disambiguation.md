@@ -82,7 +82,7 @@ For example, the word "return" has different meanings such as:
 
 This task is crucial for many natural language processing (NLP) applications, such as machine translation, information retrieval, and text understanding. Logistic Regression is a simple (easy to interpret) and useful model to identify the sense of a word in a sentence, but the pitfall of logistic regression is it might not come with the most accurate result. 
 
-More details about logistic regression or generalized linear regression can be seen this [post](https://zhiweilin27.github.io/2023/10/22/Generalized-Linear-Regression.html#logistic-regression)
+More details about logistic regression or generalized linear regression can be seen in this [post](https://zhiweilin27.github.io/2023/10/22/Generalized-Linear-Regression.html#logistic-regression)
 
 ### Implementation
 I've implemented logistic regression using PyTorch for Word Sense Disambiguation (WSD) from scratch:
