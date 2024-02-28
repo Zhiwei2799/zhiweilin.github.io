@@ -65,6 +65,7 @@ Algorithm:
 <img width="747" alt="Screenshot 2024-02-28 at 12 27 59 AM" src="https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/3dc6166e-d4fb-4cf7-bce4-0929b904b315">
 ### Implementation
 I've implemented both word tokenizer and BPE tokenier in python from scratch:
+
 [dataset](https://github.com/zhiweilin27/NLP/blob/main/a1_tweets.txt)
 
 [python code](https://github.com/zhiweilin27/NLP/blob/main/a1_p1_lin_112845768.py)
@@ -83,6 +84,7 @@ More Detail about logistic regression or generalized linear regression can see t
 
 ### Implementation:
 I've implemented both logistic regression using PyTorch for Word Sense Disambiguation (WSD) from scratch:
+
 [dataset](https://github.com/zhiweilin27/NLP/blob/main/a1_wsd_24_2_10.txt)
 
 [python code](https://github.com/zhiweilin27/NLP/blob/main/a1_p2_lin_112845768.py)
