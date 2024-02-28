@@ -6,7 +6,7 @@ toc: true
 # Probability and statistic:
 Probability and statistics cover a wide range of topics. Below are some excellent resources from which I learned probability:
 
-[Richard Weber's probability notes](https://www.statslab.cam.ac.uk/~rrw1/prob/prob-weber.pdf)A very good notes written by Richard Weber
+[Richard Weber's probability notes](https://www.statslab.cam.ac.uk/~rrw1/prob/prob-weber.pdf) A very good notes written by Richard Weber
 
 [A First Course in Probability textbook ](https://www.seyedkalali.com/wp-content/uploads/2016/11/A-First-Course-in-Probability-8th-ed.-Sheldon-Ross.pdf) An excellent introductory probability textbook
 
