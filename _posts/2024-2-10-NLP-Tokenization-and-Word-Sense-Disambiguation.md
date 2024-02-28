@@ -92,7 +92,7 @@ I've implemented logistic regression using PyTorch for Word Sense Disambiguation
 
 [python code](https://github.com/zhiweilin27/NLP/blob/main/a1_p2_lin_112845768.py)
 
-[output](https://github.com/zhiweilin27/NLP/blob/main/a1_p1_lin_112845768_OUTPUT.txt)
+[output](https://github.com/zhiweilin27/NLP/blob/main/a1_p2_lin_112845768_OUTPUT.txt)
 
 
 
