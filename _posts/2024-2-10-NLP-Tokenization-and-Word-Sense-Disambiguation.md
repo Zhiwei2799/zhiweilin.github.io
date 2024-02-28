@@ -66,10 +66,13 @@ Algorithm:
 <img width="747" alt="Screenshot 2024-02-28 at 12 27 59 AM" src="https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/3dc6166e-d4fb-4cf7-bce4-0929b904b315">
 ### Implementation
 I've implemented both word tokenizer and BPE tokenizer in python from scratch:
+
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [dataset](https://github.com/zhiweilin27/NLP/blob/main/a1_tweets.txt)
+
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [python code](https://github.com/zhiweilin27/NLP/blob/main/a1_p1_lin_112845768.py)
+
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [output](https://github.com/zhiweilin27/NLP/blob/main/a1_p1_lin_112845768_OUTPUT.txt)
 
@@ -87,10 +90,13 @@ More details about logistic regression or generalized linear regression can be s
 ### Implementation
 I've implemented logistic regression using PyTorch for Word Sense Disambiguation (WSD) from scratch:
 (One also can use CNN, RNN, or transformer to do this task, as those may yield better accuracy)
+
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [dataset](https://github.com/zhiweilin27/NLP/blob/main/a1_wsd_24_2_10.txt)
+
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [python code](https://github.com/zhiweilin27/NLP/blob/main/a1_p2_lin_112845768.py)
+
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [output](https://github.com/zhiweilin27/NLP/blob/main/a1_p2_lin_112845768_OUTPUT.txt)
 
