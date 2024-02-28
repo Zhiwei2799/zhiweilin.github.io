@@ -53,7 +53,11 @@ $$
 f_Y(\mathbf{y}) = f_X(\mathbf{g}^{-1}(\mathbf{y})) \cdot |\det(J)|
 $$
 
-where $$|\det(J)|$$ is the absolute value of the determinant of the Jacobian matrix evaluated at $$**X** = **g**^{-1}(\mathbf{y})##.
+where
+
+$$
+|\det(J)| \text{ is the absolute value of the determinant of the Jacobian matrix evaluated at } \mathbf{X} = \mathbf{g}^{-1}(\mathbf{y}).
+$$
 
 ### Example
 
@@ -66,7 +70,13 @@ J = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-The determinant $$|\det(J)|$$ is then used in the transformation formula to find the new PDF.
+The determinant
+
+$$
+|\det(J)|
+$$
+
+is then used in the transformation formula to find the new PDF.
 
 
 A reference chart of common distributions and relations between them.
