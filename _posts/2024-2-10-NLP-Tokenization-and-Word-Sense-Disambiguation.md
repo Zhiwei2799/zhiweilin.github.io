@@ -84,7 +84,7 @@ This task is crucial for many natural language processing (NLP) applications, su
 
 More details about logistic regression or generalized linear regression can be seen this [post](https://zhiweilin27.github.io/2023/10/22/Generalized-Linear-Regression.html#logistic-regression)
 
-### Implementation:
+### Implementation
 I've implemented logistic regression using PyTorch for Word Sense Disambiguation (WSD) from scratch:
 (One also can use CNN, RNN, or transformer to do this task, as those may yield better accuracy)
 
