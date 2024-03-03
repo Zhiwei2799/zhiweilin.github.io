@@ -3,7 +3,7 @@ layout: post
 math: true
 toc: true
 ---
-## Overview
+## Decision Tree Overview
 Decision trees are a type of supervised machine learning algorithm used for classification and regression tasks with a tree-like model. The basic structure of a tree
 consists of the root node, decision node, and leaf node. The general procedure is that it starts at the root, splits based on the best attribute, and repeats until 
 meeting stopping criteria (e.g., all instances in a leaf node belong to the same class).
@@ -42,11 +42,11 @@ some advantages over individual trees such as improved accuracy, reduced overfit
 Bootstrapping is a fundamental technique in ensemble modeling. It involves generating additional samples by repeatedly sampling from the existing observations with **replacement**, as new samples are available, the accuracy of statistical estimates (bias and variance) can be assessed. 
 More specifically, each subset has the same size as the original dataset, and random sampling aids in estimating the mean and standard deviation by resampling from the dataset.
 
-#### Bagging
+### Bagging
 Bagging is based on the bootstrap. It combines the results of multiple models to obtain a more generalized and robust prediction. It creates subsets (bags) from the original dataset using random sampling with replacement, and each subset is used to train a base model or weak model independently. These models run in parallel and are independent of each other.
 **Random Forst** is a variant of bagging that seeks to further improve the prediction accuracy of a tree-based model. While bagging involves averaging identically distributed and possibly correlated trees, random forests seek to make the bagged trees less correlated via an additional degree of randomization - every split is allowed to use only m predictors instead of the full set of p predictors. 
 
-#### Boosting
+### Boosting
 Boosting uses a different approach to ensemble learning than bagging and random forest. Instead of making independent bootstrapped samples, fitting a decision tree to each bootstrapped sample separately, and averaging the predictions of these trees to reduce variance, boosting builds a sequence of inter-dependent tress, each fitted to the residuals of the preceding tree and a scaled down version of the current tree's prediction is subtracted from the preceding tree's residual to from the new residual. 
 Through this iterative process, boosting aims to convert a collection of weak learners into a stronger and more accurate model. The final model is a weighted combination of all the models.
 
