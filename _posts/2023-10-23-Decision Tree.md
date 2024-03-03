@@ -20,9 +20,9 @@ $$
 Gini\ Impurity = p_{1}(1-p_{1}) + p_{2}(1-p_{2})
 $$
 - Entropy: a measure similar to the Gini index.\\
-$$Entropy = -\sum_{i} p_{i} \log_{2}(p_{i})$$\\
+$$Entropy = -\sum_{i} p_{i} \ln(p_{i})$$\\
 For a two-class problem, the entropy for a given node can be written as:\\
-$$Entropy = -p \log_{2}(p) - (1 - p) \log_{2}(1 - p)$$\\
+$$Entropy = -p \ln(p) - (1 - p) \ln(1 - p)$$\\
 - Sum of Squared Error (SSE): Unlike the previous two metrics, SEE is widely used in a regression task.\\
 $$SSE = \sum_{i \in S_{1}} (y_{i} - \bar{y}_{1})^{2} + \sum_{i \in S_{2}} (y_{i} - \bar{y}_{2})^{2}$$
 
