@@ -13,7 +13,7 @@ Example: Input: "I like doing NLP"
 Tokens: ["I", "like", "doing", "NLP"]
 
 ## Byte-Pair Encoding Tokenization
-It’s used by a lot of Transformer models, including GPT, GPT-2, RoBERTa, BART, and DeBERTa. BPE training starts by computing the unique set of words used in the corpus, then iteratively merge the most frequently occurring character or byte pairs in a given dataset until a desired vocabulary size is reached.
+It’s used by a lot of Transformer models, including GPT, GPT-2, RoBERTa, BART, and DeBERTa. BPE training starts by computing the unique set of words used in the corpus, then iteratively merging the most frequently occurring character or byte pairs in a given dataset until a desired vocabulary size is reached.
 
 Example: word "low" appear 5 times, "lowest" appear 2 times, "newer" appear 6 times, "wider" appear 3 times, "new" appear 2 time in the corpus.
 
@@ -64,8 +64,18 @@ step n: continues until the max vocabulary set is reached.
 Algorithm:
 
 <img width="747" alt="Screenshot 2024-02-28 at 12 27 59 AM" src="https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/3dc6166e-d4fb-4cf7-bce4-0929b904b315">
+
+The articles I found which are very helpful for understanding Byte-Pair Encoding Tokenization:
+- [Byte-Pair Encoding: Subword-based tokenization algorithm](https://towardsdatascience.com/byte-pair-encoding-subword-based-tokenization-algorithm-77828a70bee0) written by Chetna Khanna
+- [BPE Tokenization Demystified: Implementation and Examples](https://martinlwx.github.io/en/the-bpe-tokenizer/) written by MartinLwx
+- [Vinija's notes](https://vinija.ai/nlp/tokenizer/) written by Jain, Vinija, and Chadha, Aman.
+
+### Advantage
+- Handling Rare Words: By tokenizing words into subwords, BPE mitigates the issue of out-of-vocabulary(OOV) by allowing the model to understand and generate words that it might not have seen during training. 
+- Reduced Model Size: By tokenizing words into subwords, BPE allows the model to work with a more manageable vocabulary size. This can reduce the model's complexity and the amount of memory required.
+
 ### Implementation
-I've implemented both word tokenizer and BPE tokenizer in python from scratch:
+I've implemented both word tokenizer and BPE tokenizer in Python from scratch:
 
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [dataset](https://github.com/zhiweilin27/NLP/blob/main/a1_tweets.txt)
@@ -76,6 +86,13 @@ I've implemented both word tokenizer and BPE tokenizer in python from scratch:
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [output](https://github.com/zhiweilin27/NLP/blob/main/a1_p1_lin_112845768_OUTPUT.txt)
 
+### WordPiece:
+Word Piece is also a subword tokenization algorithm, it's similar to BPE but differs slightly in its approach to creating new tokens. Instead of just merging the most frequent pairs, WordPiece looks at the likelihood of the entire vocabulary and adds the token that increases the likelihood of the data the most. It's first proposed in the paper “[Japanese and Korean Voice Search](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf)”. The core idea of Word Piece method: 
+- does putting "a" and "b" together increase the ability to model the corpus? can be quantified by: p('a','b') / (p('a')p('b'))
+
+The articles I found which are very helpful for understanding WordPiece:
+- [WordPiece: Subword-based tokenization algorithm](https://towardsdatascience.com/wordpiece-subword-based-tokenization-algorithm-1fbd14394ed7) written by Chetna Khanna
+- [Vinija's notes](https://vinija.ai/nlp/tokenizer/) written by Jain, Vinija, and Chadha, Aman.
 
 ## Logistic Regression for Word Sense Disambiguation (WSD)
 WSD is the process of identifying which sense of a word (i.e., its meaning) is used in a sentence when the word has multiple meanings.
