@@ -115,3 +115,31 @@ $$
 $$
 
 This concludes the derivation.
+
+### Decision Boundary
+The logistic function is used to map the output of a linear combination of features (i.e., the weighted sum of input features plus a bias term) to a probability value between 0 and 1. And since the logistic function(sigmoid function) is a monotonically increasing function - when x increases, y increases, the decision boundary remains linear as in linear regression. 
+
+Proof of Decision Boundary for one-variable when p(y=1|x) = p(y=0|x):
+$$
+\frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}} = \frac{1}{2}
+$$
+$$
+2 = 1 + e^{-(\beta_0 + \beta_1 x)}
+$$
+$$
+1 = e^{-(\beta_0 + \beta_1 x)}
+$$
+$$
+\ln(1) = -(\beta_0 + \beta_1 x)
+$$
+$$
+0 = -(\beta_0 + \beta_1 x)
+$$
+$$
+0 = \beta_0 + \beta_1 x
+$$
+$$
+x = -\frac{\beta_0}{\beta_1}
+$$
+
+This can be extended to multi-variables. 
