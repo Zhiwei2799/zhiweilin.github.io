@@ -143,7 +143,7 @@ The plot below is an example of a decision boundary for logistic regression:\\
 ![decision-boundary](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/ec282923-e57a-47ab-b4e2-b2419c421a51)
 
 ## Support Vector Machine
-SVM is to find a plane that has the maximum margin, i.e. the maximum distance between data points of both classes. 
+Different from Generalized Linear regression, SVM is to find a plane that has the maximum margin, i.e. the maximum distance between data points of both classes. This might yield better accuracy as we also maximize the margin distance, which provides some reinforcement. Hence, future data points can be classified with more confidence(higher accuracy).
 
 ![Capture](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/261f95b1-3d93-426f-8908-81c7152e94c0)
 
