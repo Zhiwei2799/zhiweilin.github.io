@@ -147,30 +147,30 @@ SVM is to find a plane that has the maximum margin, i.e. the maximum distance be
 
 ![Capture](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/261f95b1-3d93-426f-8908-81c7152e94c0)
 
-Hinge Loss is the loss function used in Support Vector Machines (SVM). The objective is to find the values of $$ w $$ and $$ b $$ that minimize:
+**Hinge Loss:** is the loss function used in Support Vector Machines (SVM). The objective is to find the values of $$ w $$ and $$ b $$ that minimize:\\
 $$
 \min_{w, b} \frac{1}{2}||w||^2 + C \sum_{i=1}^{n} \xi_i
-$$
-Subject to the constraints:
+$$\\
+Subject to the constraints:\\
 $$
 y_i(w \cdot x_i + b) \geq 1 - \xi_i, \quad \forall i = 1, \ldots, n
-$$
+$$\\
 $$
 \xi_i \geq 0, \quad \forall i = 1, \ldots, n
 $$
 
 Kernel Tricks: The kernel function computes the inner product between two vectors 
-- **Linear Kernel:** The simplest form, where the kernel is just the dot product of two vectors. It is used when the data is linearly separable.
+- **Linear Kernel:** The simplest form, where the kernel is just the dot product of two vectors. It is used when the data is linearly separable.\\
   $$
   K(x, x') = x \cdot x'
   $$
 
-- **Polynomial Kernel:** Allows learning of non-linear models by mapping inputs into polynomial feature space.
+- **Polynomial Kernel:** Allows learning of non-linear models by mapping inputs into polynomial feature space.\\
   $$
   K(x, x') = (\gamma x \cdot x' + r)^d
   $$
 
-- **Radial Basis Function (RBF) or Gaussian Kernel:** One of the most common kernels. It can map the inputs into an infinite-dimensional space, providing great flexibility in fitting the data.
+- **Radial Basis Function (RBF) or Gaussian Kernel:** One of the most common kernels. It can map the inputs into an infinite-dimensional space, providing great flexibility in fitting the data.\\
   $$
   K(x, x') = \exp(-\gamma \|x - x'\|^2)
   $$
