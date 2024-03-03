@@ -44,10 +44,10 @@ More specifically, each subset has the same size as the original dataset, and ra
 
 ### Bagging
 Bagging is based on the bootstrap. It combines the results of multiple models to obtain a more generalized and robust prediction. It creates subsets (bags) from the original dataset using random sampling with replacement, and each subset is used to train a base model or weak model independently. These models run in parallel and are independent of each other.
-**Random Forst** is a variant of bagging that seeks to further improve the prediction accuracy of a tree-based model. While bagging involves averaging identically distributed and possibly correlated trees, random forests seek to make the bagged trees less correlated via an additional degree of randomization - every split is allowed to use only m predictors instead of the full set of p predictors. 
+**Random Forest** is a variant of bagging that seeks to further improve the prediction accuracy of a tree-based model. While bagging involves averaging identically distributed and possibly correlated trees, random forests seek to make the bagged trees less correlated via an additional degree of randomization - every split is allowed to use only m predictors instead of the full set of p predictors. 
 
 ### Boosting
-Boosting uses a different approach to ensemble learning than bagging and random forest. Instead of making independent bootstrapped samples, fitting a decision tree to each bootstrapped sample separately, and averaging the predictions of these trees to reduce variance, boosting builds a sequence of inter-dependent tress, each fitted to the residuals of the preceding tree and a scaled down version of the current tree's prediction is subtracted from the preceding tree's residual to from the new residual. 
+Boosting uses a different approach to ensemble learning than bagging and random forest. Instead of making independent bootstrapped samples, fitting a decision tree to each bootstrapped sample separately, and averaging the predictions of these trees to reduce variance, boosting builds a sequence of inter-dependent tress, each fitted to the residuals of the preceding tree and a scaled-down version of the current tree's prediction is subtracted from the preceding tree's residual to from the new residual. 
 Through this iterative process, boosting aims to convert a collection of weak learners into a stronger and more accurate model. The final model is a weighted combination of all the models.
 
 well-known boosting models:
