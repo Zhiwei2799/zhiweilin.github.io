@@ -86,7 +86,7 @@ I've implemented both word tokenizer and BPE tokenizer in Python from scratch:
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [output](https://github.com/zhiweilin27/NLP/blob/main/a1_p1_lin_112845768_OUTPUT.txt)
 
-## WordPiece:
+## WordPiece Tokenization:
 Word Piece is also a subword tokenization algorithm, it's similar to BPE but differs slightly in its approach to creating new tokens. Instead of just merging the most frequent pairs, WordPiece looks at the likelihood of the entire vocabulary and adds the token that increases the likelihood of the data the most. It's first proposed in the paper “[Japanese and Korean Voice Search](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf)”. The core idea of Word Piece method: 
 - does putting "a" and "b" together increase the ability to model the corpus? can be quantified by: p('a','b') / (p('a')p('b'))
 
