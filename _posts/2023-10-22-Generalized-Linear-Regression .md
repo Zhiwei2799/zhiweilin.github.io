@@ -140,3 +140,5 @@ x = -\frac{\beta_0}{\beta_1}
 $$
 
 This can be extended to multi-variables. 
+
+
