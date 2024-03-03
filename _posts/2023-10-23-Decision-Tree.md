@@ -52,7 +52,7 @@ Through this iterative process, boosting aims to convert a collection of weak le
 
 well-known boosting models:
 
-1. **Gradient Boosting Machines (GBM):** A powerful boosting technique that builds trees sequentially, with each tree learning and correcting errors made by the previous one. GBM minimizes a loss function (e.g., mean squared error for regression, cross-entropy for classification) by using gradients.
+1. **Gradient Boosting Machines (GBM):** A powerful boosting technique that builds trees sequentially, with each tree learning and correcting errors made by the previous one. GBM minimizes a loss function (e.g., sum squared error for regression, cross-entropy for classification) by using gradients.
 
 2. **XGBoost (Extreme Gradient Boosting):** A highly efficient and scalable implementation of gradient boosting. It introduces several regularization techniques to prevent overfitting and improve performance.
    
