@@ -39,12 +39,6 @@ $$
 \mu = g^{-1}(\eta) = g^{-1}(\beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p)
 $$
 
-The reason generalized linear regression is still considered linear regression is because the decision boundary is linearly separable. The monotonicity of the link function provides this property.
-
-The plot below is an example of decsion boundary for logistic regression
-![decision-boundary](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/ec282923-e57a-47ab-b4e2-b2419c421a51)
-
-
 ### Canonical Link Function
 
 There are many possible link functions connecting response distribution's mean to the linear predictor. One comman choice of the link function is the canonical link, which sets the sysmatic component $$\eta$$ of the model equal to the paramter $$\theta$$. 
@@ -137,6 +131,9 @@ $$
 $$\\
 $$
 0 = \beta_0 + \beta_1 x
+
+The plot below is an example of decision boundary for logistic regression:\\
+![decision-boundary](https://github.com/zhiweilin27/zhiweilin27.github.io/assets/111717798/ec282923-e57a-47ab-b4e2-b2419c421a51)
 $$\\
 $$
 x = -\frac{\beta_0}{\beta_1}
