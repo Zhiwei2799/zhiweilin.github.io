@@ -122,22 +122,22 @@ The logistic function is used to map the output of a linear combination of featu
 Proof of Decision Boundary for one-variable when p(y=1|x) = p(y=0|x):
 $$
 \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}} = \frac{1}{2}
-$$
+$$\\
 $$
 2 = 1 + e^{-(\beta_0 + \beta_1 x)}
-$$
+$$\\
 $$
 1 = e^{-(\beta_0 + \beta_1 x)}
-$$
+$$\\
 $$
 \ln(1) = -(\beta_0 + \beta_1 x)
-$$
+$$\\
 $$
 0 = -(\beta_0 + \beta_1 x)
-$$
+$$\\
 $$
 0 = \beta_0 + \beta_1 x
-$$
+$$\\
 $$
 x = -\frac{\beta_0}{\beta_1}
 $$
