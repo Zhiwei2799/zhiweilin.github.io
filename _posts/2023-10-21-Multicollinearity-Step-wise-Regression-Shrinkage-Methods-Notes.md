@@ -52,7 +52,7 @@ $$
 E(w) = \sum(y_i - (w_0 + w_1x_{i1} + \ldots + w_p x_{ip}))^2 + \lambda \sum (w_j^2),
 $$
 
-where $$ \lambda \geq 0 $$ is called the tuning parameter. The lambda value is a hyperparameter that needs to be tuned (using cross-validation) to obtain the value of lambda such that the error (RSS) is minimized.
+where $$ \lambda \geq 0 $$ is called the tuning parameter. The $$\lambda$$ value is a hyperparameter that needs to be tuned (using cross-validation) to obtain the value of $$\lambda$$ such that the error (RSS) is minimized.
 
 
 
