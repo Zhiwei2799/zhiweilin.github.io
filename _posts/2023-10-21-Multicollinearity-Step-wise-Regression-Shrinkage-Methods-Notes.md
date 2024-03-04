@@ -58,7 +58,7 @@ where $$ \lambda \geq 0 $$ is called the tuning parameter. The $$\lambda$$ value
 
 
 Derive optimal w using matrix annotation: 
-$$ E(w) = ||xw-t||^2+\lambda ||w||^2 $$
+$$ E(w) = ||xw-y||^2+\lambda ||w||^2 $$
 
 $$ \nabla E(w) = 2x^Txw - 2x^Ty+ 2 \lambda w =0 $$
 
