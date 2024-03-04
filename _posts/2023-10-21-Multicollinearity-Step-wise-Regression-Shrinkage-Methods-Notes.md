@@ -18,11 +18,13 @@ Several methods address the multicollinearity problem:
 
 ## Step-Wise Regression (Variable Selection)
 
-Stepwise regression selects a subset of predictor variables based on statistical criteria such as adjusted $ R^2 $, AIC, BIC, or Mallow's $$ C_p $$.
+Stepwise regression selects a subset of predictor variables based on statistical criteria such as adjusted $$ R^2 $$, AIC, BIC, or Mallow's $$ C_p $$.
 
 ### Adjusted $$ R^2 $$
 
-The coefficient of determination $$ R^2 $$ is defined as $$ R^2 = 1- \frac{RSS}{TSS} $$. However, as more predictors are added, $$ R^2 $$ always increases. To address this, statisticians developed adjusted $$ R^2 $$, which rescales $$ R^2 $$ to account for the number of predictors.
+The coefficient of determination $$ R^2 $$ is defined as $$ R^2 = 1- \frac{RSS}{TSS} $$. However, as more predictors are added, $$ R^2 $$ always increases. To address this, statisticians developed adjusted $$ R^2 $$, which rescales $$ R^2 $$ to account for the number of predictors.\\
+Adjusted $$ R^2 $$ formula:  $$ R^2_{\alpha} = 1- \frac{\frac{RSS}{n-p-1}}{\frac{TSS}{n-1}} $$ \\
+As can be seen, adjusted $$ R^2 $$ rescales the ordinary $$ R^2 $$ by dividing RSS and TSS by their respective degrees of freedom in the ANOVA table. The goal of it is that the value would not always increase as more predictor variables are added in. It's sort of acting like a penalty for adding more variables. 
 
 ### AIC, BIC, and Mallow's $$ C_p $$
 
