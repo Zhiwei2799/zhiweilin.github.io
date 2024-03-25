@@ -10,7 +10,7 @@ I have obtained a Green card, no sponsorship is needed at any time.
 
 Skills:
 
-Math/Statistics/CS <i class="fa-solid fa-book-open"></i>: regression theory, time series, decision trees, deep learning, and natural language processing. 
+Math/Statistics/CS <i class="fa-solid fa-book-open"></i>: regression theory, time series, decision trees, machine learning
 
 Quantitative Finance <i class="fa-solid fa-scale-unbalanced"></i>: the Black-Scholes model, CAPM, option pricing, and portfolio optimization theory. 
 
