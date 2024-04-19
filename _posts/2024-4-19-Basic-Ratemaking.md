@@ -4,6 +4,8 @@ math: true
 toc: true
 ---
 My notes refer to the study manual [BASIC RATEMAKING Fifth Edition, May 2016](https://www.casact.org/sites/default/files/2021-03/5_Werner_Modlin.pdf).
+
+
 ## Chapter 1 Introduction
 **FUNDAMENTAL INSURANCE EQUATION**
 - **Price = Cost + Profit**
