@@ -87,7 +87,7 @@ premium is $200 (=$400,000,000 / 2,000,000).
    - It is important that the premium and the exposures be on the same basis (e.g., written, earned, or in-force).
    - Changes in average premium, if adjusted for rate change activity, highlight changes in the mix of business written (e.g., shifts toward higher or lower risk characteristics reflected in rates). 
 
-- **Loss Ratio**: is a measure of the portion of each premium dollar used to pay losses and is calculated as $$ Loss Ratio = \frac{Losses}{Premium} = \frac{Pure premium}{Average Premium}. For example, if the total loss dollars are $300,000,000 and the total premium is $400,000,000, then the
+- **Loss Ratio**: is a measure of the portion of each premium dollar used to pay losses and is calculated as $$ Loss Ratio = \frac{Losses}{Premium} = \frac{Pure premium}{Average Premium}$$. For example, if the total loss dollars are $300,000,000 and the total premium is $400,000,000, then the
 loss ratio is 75% (= $300,000,000 / $400,000,000).
    - Typically, the ratio uses total reported losses and total earned premium; however, other variations are common
    - For example, companies may include LAE in the calculation of loss ratios (commonly referred to as loss and LAE ratios). Once again, it is important to
