@@ -71,21 +71,28 @@ The two primary profit sources for insurance companies are underwriting profit a
 ### Basic Insurance Ratios
 A set of basic ratios to monitor and evaluate the appropriateness of an insurance company’s rates. 
 
+
 - **Frequency**: is a measure of the rate at which claims occur and is normally calculated as $$ Frequency = \frac{Number of Claims}{Number of Exposures} $$. For example, if the number of claims is 100,000 and the number of earned exposures is 2,000,000, then the frequency is 5% (= 100,000 / 2,000,000).
+
+
 - **Severity**: is a measure of the average cost of claims and is calculated as $$ Severity = \frac{Losses}{Number of Claims} $$. For example, if the total loss dollars are $300,000,000 and the number of claims is 100,000, then the severity is
 $3,000 (= $300,000,000 / 100,000). 
   - paid severity is calculated using paid losses on closed claims divided by closed claims.
   - Reported severity is calculated using reported losses and reported claims.
   - Additionally, ALAE may be included or excluded from the numerator. Consequently, it is important to clearly document the types of losses and claims used in calculating the ratio.
+
+
 - **Pure Premium (or Loss Cost)**: is a measure of the average loss per exposure and is calculated as $$ Pure Premium = \frac{Losses}{Number of Exposures} = Frequency X Severity $$ For example, if total loss dollars are $300,000,000 and the number of exposures is
 2,000,000, then the pure premium is $150 (= $300,000,000 / 2,000,000 = 5.0% x $3,000).
   - Typically, pure premium is calculated using reported losses (or ultimate losses) and earned exposures.
   - The reported losses may or may not include ALAE and/or ULAE. As companies may choose to use other inputs depending on the specific needs, it is important to document the inputs chosen.
 
+
 - **Average Premium**: A typical ratio is average premium, which is calculated as $$ Average Premium = \frac{Premuim}{Number Of Expesures} $$ For example, if the total premium is $400,000,000 and the total exposures are 2,000,000, then the average
 premium is $200 (=$400,000,000 / 2,000,000).
    - It is important that the premium and the exposures be on the same basis (e.g., written, earned, or in-force).
    - Changes in average premium, if adjusted for rate change activity, highlight changes in the mix of business written (e.g., shifts toward higher or lower risk characteristics reflected in rates). 
+
 
 - **Loss Ratio**: is a measure of the portion of each premium dollar used to pay losses and is calculated as $$ Loss Ratio = \frac{Losses}{Premium} = \frac{Pure premium}{Average Premium}$$. For example, if the total loss dollars are $300,000,000 and the total premium is $400,000,000, then the
 loss ratio is 75% (= $300,000,000 / $400,000,000).
@@ -94,25 +101,33 @@ loss ratio is 75% (= $300,000,000 / $400,000,000).
 clarify the inputs being used. 
    - Historically, most companies monitor and analyze the loss and LAE ratio as a primary measure of the adequacy of the rates overall and for various key segments of the portfolio.
 
+
 - **Loss Adjustment Expense Ratio (LAE Ratio)**: compares the amount of claim-related expense to total losses and is calculated as $$ \frac{LAERatio} = {Loss Adjustment Expenses}{Losses}$$
     - The loss adjustment expenses include both allocated and unallocated loss adjustment expenses. Companies may differ as to whether paid or reported (incurred) figures are used.
     - Companies monitor this ratio over time to determine if costs associated with claim settlement procedures are stable or not. A company may compare its ratio to those of other companies as a benchmark for its claims settlement procedures. 
 
+
 - **Underwriting Expense Ratio**: is a measure of the portion of each premium dollar used to pay for underwriting expenses, and it is calculated as $$ UW Expense Ratio = \frac {UW Expense}{Premium} $$
 
+
 - **Operating Expense Ratio**: is a measure of the portion of each premium dollar used to pay for loss adjustment and underwriting expenses and is calculated as  $$ OER = UW Expense Ratio + \frac {LAE}{Earned Premium} $$
-   - The OER is used to monitor operational expenditures and is key to determining overall profitability. 
+   - The OER is used to monitor operational expenditures and is key to determining overall profitability.
+
+ 
 - **Combined Ratio**: is the combination of the loss and expense ratios, and historically has been calculated as $$ Combined Ratio = Loss ratio + \frac{LAE}{Earned Premium} + \frac{Underwriting Expenses}{Written Premium} $$
    - In calculating the combined ratio, the loss ratio should not include LAE or it will be double counted. 
    - some companies may compare underwriting expenses incurred throughout the policy to earned premium rather than to written premium. In this case,
 the companies may choose to define combined ratio as $$ Combined Ratio = Loss Ratio + OER $$ 
 as
 
+
 - **Retention Ratio**: is a measure of the rate at which existing insureds renew their policies upon expiration. The retention ratio is defined as $$ Retention Ratio = \frac{Number of Policies Renewed}{Number of potential Renewal Policies} If 100,000 policies are invited to renew in a particular month and 85,000 of the insureds choose to renew,
 then the retention ratio is 85% (= 85,000 / 100,000).
    - Retention ratios and changes in the retention ratios are monitored closely by product management and
 marketing departments
    - Retention ratios are used to gauge the competitiveness of rates and are very closely examined following rate changes or major changes in service
+
+
 - **Close Ratio**: is a measure of the rate at which prospective insureds accept a new business quote. The close ratio is defined as $$ Closs ratio = \frac{Number of Accepted Quotes}{Number of Quotes} $$ For example, if the company provides 300,000 quotes in a particular month and generates 60,000 new
 policies from those quotes, then the close ratio is 20% (= 60,000 / 300,000).
    - a prospective insured may receive multiple quotes and companies may count that as one quote or may consider each quote
