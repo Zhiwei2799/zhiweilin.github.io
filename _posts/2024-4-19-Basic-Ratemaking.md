@@ -126,7 +126,6 @@ $3,000 (= $300,000,000 / 100,000).
    - In calculating the combined ratio, the loss ratio should not include LAE or it will be double counted. 
    - some companies may compare underwriting expenses incurred throughout the policy to earned premiums rather than to written premiums. In this case,
 the companies may choose to define combined ratio as $$ \text{Combined Ratio} = \text{Loss Ratio} + \text{OER} $$ 
-as
 
 
 - **Retention Ratio**: is a measure of the rate at which existing insureds renew their policies upon expiration. The retention ratio is defined as $$ \text{Retention Ratio} = \frac{\text{# of Policies Renewed}}{\text{# of potential Renewal Policies}}$$.
@@ -135,6 +134,7 @@ marketing departments
    - Retention ratios are used to gauge the competitiveness of rates and are very closely examined following rate changes or major changes in service
    - If 100,000 policies are invited to renew in a particular month and 85,000 of the insureds choose to renew,
 then the retention ratio is 85% (= 85,000 / 100,000).
+
 
 - **Close Ratio**: is a measure of the rate at which prospective insureds accept a new business quote. The close ratio is defined as $$ \text{Closs ratio} = \frac{\text{# of Accepted Quotes}}{\text{# of Quotes}} $$. 
    - a prospective insured may receive multiple quotes and companies may count that as one quote or may consider each quote
