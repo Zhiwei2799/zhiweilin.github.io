@@ -155,7 +155,7 @@ Generally speaking, the first three items are found in a company’s rating manu
 ### Rules 
 - Typically contains qualitative information that is needed to understand and apply the quantitative rating algorithms
 - To be an aid in calculating premium
-### RATE PAGES
+### RATEPAGES
 - The rate pages generally contain the numerical inputs (e.g., base rates, rating tables, and fees) needed to calculate the premium
 - Base Risk
   - A specific risk pre A specific risk pre--defined by the insurer
@@ -164,14 +164,15 @@ Generally speaking, the first three items are found in a company’s rating manu
   - The rate applied to the base risk
   - Not the average rate
   - The rate for risks other than base risk is determined by modifying the base rate by a series of multipliers or addends or some unique mathematical expression.
-
- ### Rating Algorithms 
+  - 
+### Rating Algorithms 
  - describes in detail how to combine the various components in the rules and rate pages to calculate the overall premium charged for any risk that is not specifically pre-printed in a rate table.
  - May include:
     - The order in which rating variables should be considered
     - Multiplicative or additive
     - Maximum and minimum premium
-  ### Underwriting Guidelines
+   
+### Underwriting Guidelines
  - Underwriting guidelines may be used to specify
    – Decisions to accept, decline, or refer (to senior underwriter) risks 
    – Company Placement
