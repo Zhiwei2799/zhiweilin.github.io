@@ -88,7 +88,7 @@ A set of basic ratios to monitor and evaluate the appropriateness of an insuranc
 $3,000 (= $300,000,000 / 100,000). 
 
 
-- **Pure Premium (or Loss Cost)**: is a measure of the average loss per exposure and is calculated as $$ \text{Pure Premium} = \frac{\text{Losses}}{\text{# of Exposures}} = Frequency \times Severity $$
+- **Pure Premium (or Loss Cost)**: is a measure of the average loss per exposure and is calculated as $$ \text{Pure Premium} = \frac{\text{Losses}}{\text{# of Exposures}} = \text{Frequency} \ \text{times Severity} $$
   - Typically, reported losses (or ultimate losses) and earned exposures are used.
   - The reported losses may or may not include ALAE and/or ULAE.
   - Help measure the overall loss cost trends.
@@ -96,7 +96,6 @@ $3,000 (= $300,000,000 / 100,000).
 
 
 - **Average Premium**: A typical ratio is average premium, which is calculated as $$ \text{Average Premium} = \frac{\text{Premuim}}{\text{# Of Expesures}} $$
-premium is $200 (=$400,000,000 / 2,000,000).
    - It is important that the premium and the exposures be on the same basis (e.g., written, earned, or in-force).
    - Changes in average premium may indicate
       - Rate change
@@ -130,7 +129,7 @@ the companies may choose to define combined ratio as $$ \text{Combined Ratio} = 
 as
 
 
-- **Retention Ratio**: is a measure of the rate at which existing insureds renew their policies upon expiration. The retention ratio is defined as $$ \text{Retention Ratio} = \frac{\text{# of Policies Renewed}}{\text{# of potential Renewal Policies}}.
+- **Retention Ratio**: is a measure of the rate at which existing insureds renew their policies upon expiration. The retention ratio is defined as $$ \text{Retention Ratio} = \frac{\text{# of Policies Renewed}}{\text{# of potential Renewal Policies}}$$.
    - Retention ratios and changes in the retention ratios are monitored closely by product management and
 marketing departments
    - Retention ratios are used to gauge the competitiveness of rates and are very closely examined following rate changes or major changes in service
