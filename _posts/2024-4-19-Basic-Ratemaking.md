@@ -145,5 +145,104 @@ departments.
    - If the company provides 300,000 quotes in a particular month and generates 60,000 new
 policies from those quotes, then the close ratio is 20% (= 60,000 / 300,000).
 
+## CHAPTER	2 RATING	MANUALS	
+For most lines of business, the following information is necessary to calculate the premium for a given risk:
+- Rules
+- Rate pages (i.e., base rates, rating tables, and fees)
+- Rating algorithm
+- Underwriting guidelines
+Generally speaking, the first three items are found in a company’s rating manual, and the underwriting guidelines are maintained in a separate proprietary underwriting manual.
+### Rules 
+- Typically contains qualitative information that is needed to understand and apply the quantitative rating algorithms
+- To be an aid in calculating premium
+### RATE PAGES
+- The rate pages generally contain the numerical inputs (e.g., base rates, rating tables, and fees) needed to calculate the premium
+- Base Risk
+  - A specific risk pre A specific risk pre--defined by the insurer
+  – Represents a set of risk characteristics that are most common or target market.
+- Base Rate
+  - The rate applied to the base risk
+  - Not the average rate
+  - The rate for risks other than base risk is determined by modifying the base rate by a series of multipliers or addends or some unique mathematical expression.
 
-     
+ ### Rating Algorithms 
+ - describes in detail how to combine the various components in the rules and rate pages to calculate the overall premium charged for any risk that is not specifically pre-printed in a rate table.
+ - May include:
+    - The order in which rating variables should be considered
+    - Multiplicative or additive
+    - Maximum and minimum premium
+  ### Underwriting Guidelines
+ - Underwriting guidelines may be used to specify
+   – Decisions to accept, decline, or refer (to senior underwriter) risks 
+   – Company Placement
+   - Tier placement
+   – Schedule rating credits/debits
+
+[HOMEOWNERS RATING MANUAL EXAMPLE](https://www.casact.org/sites/default/files/2021-03/5_Werner_Modlin.pdf) Check page 17 for homeowners rating manual example. 
+
+## CHAPTER	3 RATEMAKING	DATA	
+Data is used by actuaries for many purposes including ratemaking.
+- Internal Data
+  - Risk information including exposures, premiums, claim counts, and losses
+  - Accounting Information including Underwriting expense, ULAE
+- Risk Data
+   - Policy Database
+      - Policy Identifier
+      - Risk Identifier (one policy may have multiple risks, e.g. two cars, two locations of insured)
+      - Relevant Dates (original effective date, original expiration date, date of amendment)
+      - Premium
+      - Exposure
+      - Characteristic
+  - Claim Database
+    - Policy Identifier
+    - Risk Identifier
+    - Claim Identifier
+    - Claimant Identifier
+    - Event Identifier
+    - Relevant Loss Dates (Report data, data of loss payment, date of reserve change, data of claim status change)
+    - Claim Status (open, closed, reopen, reclosed)
+    - Paid Loss
+    - Case Reserve
+    - ALAE (ULAE is handled elsewhere)
+    - Salvage & Subrogation
+    - Type of Injury
+    - Cause of Loss
+- Accounting Information
+   - Underwriting Expenses
+      - Expenses incurred in the acquisition and servicing of the policies, including general expenses, other acquisition expenses, commissions and brokerage, taxes, licenses, and fees
+   - ULAE
+- Data Aggregation
+  - Calendar year
+     - Consider all premium and loss transactions that occur during the 12-month calendar year
+     - All premiums and exposures are fixed at the end of the CY
+     - CY data is available quickly once the CY ends
+     - Main disadvantage of CY is the mismatch in timing between premiums and losses. For example, premium earned during CY come from policies in force during that year, and losses may include payments and reserve changes on claims from policies issued years ago.
+  - Accident year
+     - Considers losses for accidents that have occurred during a 12-month period, regardless of the policy issued date
+     - Premium and exposure are defined as the same as CY aggregation
+     - Reported losses consist of loss payments made plus case reserves only for those claims that occurred during that year
+     - Reported losses can and often do change at the end of AY
+        - Additional Claims are reported and paid
+        - Reserves are changed
+     - Future development on those known losses needs to be estimated
+     - Better match of premium and losses than CY
+        - Losses on accidents occurring during the year are compared to premiums earned on policies during the same year
+ - Policy Year
+    - Considers all premium and loss transactions on policies that were effective during a 12-month period
+    - Premiums and exposures are not fixed until after the expiration date
+    - Reported losses for PY consist of payments made plus case reserves only for those claims covered by policies effective during the year
+    - Reported losses can and often do change at the end of AY
+      - Additional claims are reported and paid
+      - Reserves are changed
+    - Best Match between losses and premium
+       - Losses on policies effective during the year are compared with premiums earned on those same policies
+    - Data takes longer to develop than both CY and AY
+       - For a product with an annual policy term, premiums are not fully earned until 24 months after the start of the policy year.
+  - Report year
+    - Considers losses for accidents that are reported during a 12-month period, regardless of when the claim occurred
+    - Premium and exposures are defined as the same as CY aggregation
+    - Reported losses consist of loss payments made plus case reserves only for those claims that are reported during that year
+    - Reported losses can and often do change at the end of AY
+       - Additional claims are reported and paid
+       - Reserves are changed
+
