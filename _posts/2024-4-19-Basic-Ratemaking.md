@@ -182,10 +182,10 @@ Generally speaking, the first three items are found in a company’s rating manu
 
 ## CHAPTER	3 RATEMAKING	DATA	
 Data is used by actuaries for many purposes including ratemaking.
-- Internal Data
+### Internal Data
   - Risk information including exposures, premiums, claim counts, and losses
   - Accounting Information including Underwriting expense, ULAE
-- Risk Data
+### Risk Data
    - Policy Database
       - Policy Identifier
       - Risk Identifier (one policy may have multiple risks, e.g. two cars, two locations of insured)
@@ -207,11 +207,11 @@ Data is used by actuaries for many purposes including ratemaking.
     - Salvage & Subrogation
     - Type of Injury
     - Cause of Loss
-- Accounting Information
+ ### Accounting Information
    - Underwriting Expenses
       - Expenses incurred in the acquisition and servicing of the policies, including general expenses, other acquisition expenses, commissions and brokerage, taxes, licenses, and fees
    - ULAE
-- Data Aggregation
+ ### Data Aggregation
   - Calendar year
      - Consider all premium and loss transactions that occur during the 12-month calendar year
      - All premiums and exposures are fixed at the end of the CY
