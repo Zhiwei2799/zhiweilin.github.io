@@ -74,12 +74,12 @@ The two primary profit sources for insurance companies are underwriting profit a
 A set of basic ratios to monitor and evaluate the appropriateness of an insurance company’s rates. 
 
 
-- **Frequency**: is a measure of the rate at which claims occur and is normally calculated as $$ \text{Frequency} = \frac{ \text{# of Claims}}{\text{# of Exposures}} $$.
+- **Frequency**: $$ \text{Frequency} = \frac{ \text{# of Claims}}{\text{# of Exposures}} $$.
   - Help measure the effectiveness of specific underwriting actions. 
   - For example, if the number of claims is 100,000 and the number of earned exposures is 2,000,000, then the frequency is 5% (= 100,000 / 2,000,000).
 
 
-- **Severity**: is a measure of the average cost of claims and is calculated as $$ \text{Severity} = \frac{\text{Losses}}{\text{# of Claims}} $$.
+- **Severity**: $$ \text{average cost of claims} =\text{Severity} = \frac{\text{Losses}}{\text{# of Claims}} $$.
   - $$ \text{Paid Severity} = \frac{\text{Paid Losses}}{\text{# of Claims Closed}} $$
   - $$ \text{Reported Severity} = \frac{\text{Reported Losses}}{\text{# of Claims Reported}} $$
   - Additionally, ALAE may be included or excluded from the numerator.
@@ -88,14 +88,14 @@ A set of basic ratios to monitor and evaluate the appropriateness of an insuranc
 $3,000 (= $300,000,000 / 100,000). 
 
 
-- **Pure Premium (or Loss Cost)**: is a measure of the average loss per exposure and is calculated as $$ \text{Pure Premium} = \frac{\text{Losses}}{\text{# of Exposures}} = \text{Frequency} X \text{times Severity} $$
+- **Pure Premium (or Loss Cost)**: $$ \text{average loss per exposure } =\text{Pure Premium} = \frac{\text{Losses}}{\text{# of Exposures}} = \text{Frequency} X \text{times Severity} $$
   - Typically, reported losses (or ultimate losses) and earned exposures are used.
   - The reported losses may or may not include ALAE and/or ULAE.
   - Help measure the overall loss cost trends.
   - For example, if total loss dollars are $300,000,000 and the number of exposures is 2,000,000, then the pure premium is $150 (= $300,000,000 / 2,000,000 = 5.0% x $3,000).
 
 
-- **Average Premium**: A typical ratio is average premium, which is calculated as $$ \text{Average Premium} = \frac{\text{Premuim}}{\text{# Of Expesures}} $$
+- **Average Premium**: $$ \text{Average Premium} = \frac{\text{Premuim}}{\text{# Of Expesures}} $$
    - It is important that the premium and the exposures be on the same basis (e.g., written, earned, or in-force).
    - Changes in average premium may indicate
       - Rate change
@@ -103,32 +103,32 @@ $3,000 (= $300,000,000 / 100,000).
     - For example, if the total premium is $400,000,000 and the total exposures are 2,000,000, then the average
 
 
-- **Loss Ratio**: is a measure of the portion of each premium dollar used to pay losses and is calculated as $$ \text{Loss Ratio} = \frac{\text{Losses}}{\text{Premium}} = \frac{\text{Pure premium}}{\text{Average Premium}}$$.
+- **Loss Ratio**: $$ \text{Loss Ratio} = \frac{\text{Losses}}{\text{Premium}} = \frac{\text{Pure premium}}{\text{Average Premium}}$$.
    - Typically, the ratio uses total reported losses and total earned premiums; however, other variations are common. Companies may include LAE in the calculation of loss ratios (commonly referred to as loss and LAE ratios).
    - Help measure the adequacy of the rates
    - For example, if the total loss dollars are $300,000,000 and the total premium is $400,000,000, then the loss ratio is 75% (= $300,000,000 / $400,000,000).
 
 
-- **Loss Adjustment Expense Ratio (LAE Ratio)**: compares the amount of claim-related expense to total losses and is calculated as $$ {\text{LAERatio}} = \frac{\text{Loss Adjustment Expenses}}{\text{Losses}}$$
+- **Loss Adjustment Expense Ratio (LAE Ratio)**: $$ {\text{LAERatio}} = \frac{\text{Loss Adjustment Expenses}}{\text{Losses}}$$
     - The loss adjustment expenses include both allocated and unallocated loss adjustment expenses. Companies may differ as to whether paid or reported (incurred) figures are used.
     - Companies monitor this ratio over time to determine if costs associated with claim settlement procedures are stable or not. A company may compare its ratio to those of other companies as a benchmark for its claims settlement procedures.
 
      
 
-- **Underwriting Expense Ratio**: is a measure of the portion of each premium dollar used to pay for underwriting expenses, and it is calculated as $$ \text{UW Expense Ratio} = \frac {\text{UW Expense}}{\text{Premium}} $$
+- **Underwriting Expense Ratio**: $$ \text{UW Expense Ratio} = \frac {\text{UW Expense}}{\text{Premium}} $$
 
 
-- **Operating Expense Ratio**: is a measure of the portion of each premium dollar used to pay for loss adjustment and underwriting expenses and is calculated as  $$ \text{OER} = \text{UW Expense Ratio} + \frac {\text{LAE}} {\text{Earned Premium}} $$
+- **Operating Expense Ratio**: $$ \text{OER} = \text{UW Expense Ratio} + \frac {\text{LAE}} {\text{Earned Premium}} $$
    - The OER is used to monitor operational expenditures and is key to determining overall profitability.
 
  
-- **Combined Ratio**: is the combination of the loss and expense ratios, and historically has been calculated as $$ \text{Combined Ratio} = \text{Loss ratio} + \frac{\text{LAE}}{\text{Earned Premium}} + \frac{\text{Underwriting Expenses}}{\text{Written Premium}} $$
+- **Combined Ratio**: $$ \text{Combined Ratio} = \text{Loss ratio} + \frac{\text{LAE}}{\text{Earned Premium}} + \frac{\text{Underwriting Expenses}}{\text{Written Premium}} $$
    - In calculating the combined ratio, the loss ratio should not include LAE or it will be double counted. 
    - some companies may compare underwriting expenses incurred throughout the policy to earned premiums rather than to written premiums. In this case,
 the companies may choose to define combined ratio as $$ \text{Combined Ratio} = \text{Loss Ratio} + \text{OER} $$ 
 
 
-- **Retention Ratio**: is a measure of the rate at which existing insureds renew their policies upon expiration. The retention ratio is defined as $$ \text{Retention Ratio} = \frac{\text{# of Policies Renewed}}{\text{# of potential Renewal Policies}}$$.
+- **Retention Ratio**: $$ \text{Retention Ratio} = \frac{\text{# of Policies Renewed}}{\text{# of potential Renewal Policies}}$$.
    - Retention ratios and changes in the retention ratios are monitored closely by product management and
 marketing departments
    - Retention ratios are used to gauge the competitiveness of rates and are very closely examined following rate changes or major changes in service
@@ -136,7 +136,7 @@ marketing departments
 then the retention ratio is 85% (= 85,000 / 100,000).
 
 
-- **Close Ratio**: is a measure of the rate at which prospective insureds accept a new business quote. The close ratio is defined as $$ \text{Closs ratio} = \frac{\text{# of Accepted Quotes}}{\text{# of Quotes}} $$. 
+- **Close Ratio**: $$ \text{Closs ratio} = \frac{\text{# of Accepted Quotes}}{\text{# of Quotes}} $$. 
    - a prospective insured may receive multiple quotes and companies may count that as one quote or may consider each quote
 separately.
    - Close ratios and changes in the close ratios are monitored closely by product management and marketing
