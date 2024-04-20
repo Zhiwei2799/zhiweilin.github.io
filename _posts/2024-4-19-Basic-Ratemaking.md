@@ -88,7 +88,7 @@ A set of basic ratios to monitor and evaluate the appropriateness of an insuranc
 $3,000 (= $300,000,000 / 100,000). 
 
 
-- **Pure Premium (or Loss Cost)**: is a measure of the average loss per exposure and is calculated as $$ \text{Pure Premium} = \frac{\text{Losses}}{\text{# of Exposures}} = \text{Frequency} \ \text{times Severity} $$
+- **Pure Premium (or Loss Cost)**: is a measure of the average loss per exposure and is calculated as $$ \text{Pure Premium} = \frac{\text{Losses}}{\text{# of Exposures}} = \text{Frequency} X \text{times Severity} $$
   - Typically, reported losses (or ultimate losses) and earned exposures are used.
   - The reported losses may or may not include ALAE and/or ULAE.
   - Help measure the overall loss cost trends.
