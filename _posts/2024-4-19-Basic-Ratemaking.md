@@ -183,9 +183,11 @@ Generally speaking, the first three items are found in a company’s rating manu
 
 ## CHAPTER	3 RATEMAKING	DATA	
 Data is used by actuaries for many purposes including ratemaking.
+
 ### Internal Data
   - Risk information including exposures, premiums, claim counts, and losses
   - Accounting Information including Underwriting expense, ULAE
+
 ### Risk Data
    - Policy Database
       - Policy Identifier
@@ -208,10 +210,12 @@ Data is used by actuaries for many purposes including ratemaking.
     - Salvage & Subrogation
     - Type of Injury
     - Cause of Loss
+    
  ### Accounting Information
    - Underwriting Expenses
       - Expenses incurred in the acquisition and servicing of the policies, including general expenses, other acquisition expenses, commissions and brokerage, taxes, licenses, and fees
    - ULAE
+
  ### Data Aggregation
   - Calendar year
      - Consider all premium and loss transactions that occur during the 12-month calendar year
@@ -219,7 +223,7 @@ Data is used by actuaries for many purposes including ratemaking.
      - CY data is available quickly once the CY ends
      - Main disadvantage of CY is the mismatch in timing between premiums and losses. For example, premium earned during CY come from policies in force during that year, and losses may include payments and reserve changes on claims from policies issued years ago.
   - Accident year
-     - Considers losses for accidents that have occurred during a 12-month period, regardless of the policy issued date
+     - Considers losses for accidents that have occurred during a 12-month period, regardless of the policy-issued date
      - Premium and exposure are defined as the same as CY aggregation
      - Reported losses consist of loss payments made plus case reserves only for those claims that occurred during that year
      - Reported losses can and often do change at the end of AY
