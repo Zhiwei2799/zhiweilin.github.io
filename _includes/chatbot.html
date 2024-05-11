@@ -18,7 +18,7 @@
         #chatbot-container {
             position: fixed;
             left: 10px;
-            bottom: 10px;
+            bottom: 20px;
             width: 400px;
             height: 750px;
             border-radius: 10px;
@@ -30,9 +30,9 @@
         #toggle-chatbot {
             position: fixed;
             left: 10px;
-            bottom: 10px; /* Positioned above the chatbot container */
+            bottom: 0px; /* Positioned above the chatbot container */
             cursor: pointer; /* Makes it clear it's clickable */
-            padding: 8px 15px;
+            padding: 8px 10px;
             background-color: #0084ff;
             color: white;
             border: none;
@@ -48,7 +48,7 @@
     </style>
 </head>
 <body>
-    <button id="toggle-chatbot">Click here to start a Chat with Zhiwei Bot!!!  Click again to hide the Bot</button>
+    <button id="toggle-chatbot">Click here to start a Chat with Zhiwei Bot!!!</button>
     <div id="chatbot-container">
         <iframe srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
         <script>
