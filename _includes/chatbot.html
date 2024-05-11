@@ -2,65 +2,69 @@
 <html>
 <head>
     <title>ChatBot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- Font Awesome CDN -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
-            background-color: #000000;
-            color: white;
         }
 
-        #chatbot-container {
-            position: fixed;
-            left: 10px;
-            bottom: 10px;
-            width: 300px;
-            height: 700px;
-            border-radius: 10px;
+        .center-div {
+            width: 100%; /* Adjusted to fill the iframe */
+            height: 100%; /* Adjusted to fill the iframe */
+            background-color: white;
+            border: none;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             overflow: hidden;
-            display: none; /* Initially hidden */
-        }
-
-        #toggle-chatbot {
-            position: fixed;
-            left: 10px;
-            bottom: 720px; /* Adjusted for visibility */
-            cursor: pointer;
-            padding: 8px 15px;
-            background-color: #0084ff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
         }
     </style>
 </head>
 <body>
-    <i id="toggle-chatbot" class="fas fa-comments" style="font-size:24px;"></i>
-    <div id="chatbot-container">
-        <iframe srcdoc="
-            <html>
-                <body style='margin:0; font-family: Arial, sans-serif; height: 100%; display: flex; justify-content: center; align-items: center; background-color: #000000; color: white;'>
-                    <!-- Your chatbot content goes here -->
-                </body>
-            </html>
-        "></iframe>
+    <div>
+        <p style="text-align: center;">Botpress Chatbot in a <span>&lt;</span>div<span>&gt;</span></p>
+        <div class="center-div">
+            <iframe
+                style="width: 100%; height: 100%; border: none;"
+                srcdoc="
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <meta name='viewport' content='width=device-width, initial-scale=1'>
+                        <link rel='stylesheet' href='https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css'>
+                    </head>
+                    <body>
+                        <script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+                        <script>
+                            window.botpressWebChat.init({
+                                'composerPlaceholder': 'Chat with bot',
+                                'botConversationDescription': 'This chatbot was built surprisingly fast with Botpress',
+                                'botName': 'Name',
+                                'botId': 'd152f93a-c591-4c84-a3d6-9ca6a4c1f687',
+                                'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                                'messagingUrl': 'https://messaging.botpress.cloud',
+                                'clientId': 'd152f93a-c591-4c84-a3d6-9ca6a4c1f687',
+                                'enableConversationDeletion': true,
+                                'showPoweredBy': true,
+                                'className': 'webchatIframe',
+                                'containerWidth': '100%',
+                                'layoutWidth': '100%',
+                                'hideWidget': true,
+                                'showCloseButton': false,
+                                'disableAnimations': true,
+                                'closeOnEscape': false,
+                                'showConversationsButton': false
+                            });
+                        </script>
+                    </body>
+                    </html>
+                "
+            ></iframe>
+        </div>
     </div>
-    <script>
-        document.getElementById('toggle-chatbot').addEventListener('click', function() {
-            var chatbotContainer = document.getElementById('chatbot-container');
-            chatbotContainer.style.display = (chatbotContainer.style.display === 'none' ? 'block' : 'none');
-        });
-    </script>
 </body>
 </html>
