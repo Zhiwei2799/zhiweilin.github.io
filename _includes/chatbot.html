@@ -16,50 +16,51 @@
         }
 
         #chatbot-container {
-            position: fixed;  /* Keeps the chatbot at a fixed position */
-            left: 10px;       /* Distance from the left side of the viewport */
-            bottom: 10px;     /* Distance from the bottom of the viewport */
-            width: 270px;     /* Smaller width for the chatbot container */
-            height: 550px;    /* Smaller height for the chatbot container */
-            border-radius: 10px;  /* Rounded corners for the container */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* Shadow for better visibility */
-            overflow: hidden; /* Hides any overflow content */
+            position: fixed;
+            left: 10px;
+            bottom: 10px;
+            width: 300px;
+            height: 550px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: none; /* Initially hidden */
+        }
+
+        #toggle-chatbot {
+            position: fixed;
+            left: 10px;
+            bottom: 570px; /* Positioned above the chatbot container */
+            cursor: pointer; /* Makes it clear it's clickable */
+            padding: 8px 15px;
+            background-color: #0084ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
         }
 
         iframe {
             width: 100%;
             height: 100%;
-            border: none; /* No border for the iframe */
+            border: none;
         }
     </style>
 </head>
 <body>
+    <button id="toggle-chatbot">Chat with Zhiwei Bot</button>
     <div id="chatbot-container">
-        <iframe srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
-        <script>
-          window.botpressWebChat.init({
-              'composerPlaceholder': 'Start a conversation...',
-              'botConversationDescription': 'Chat with bot',
-              'botName': 'Zhiwei Bot',
-              'botId': 'd152f93a-c591-4c84-a3d6-9ca6a4c1f687',
-              'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
-              'messagingUrl': 'https://messaging.botpress.cloud',
-              'clientId': 'd152f93a-c591-4c84-a3d6-9ca6a4c1f687',
-              'enableConversationDeletion': true,
-              'showPoweredBy': true,
-              'className': 'webchatIframe',
-              'containerWidth': '100%25',
-              'layoutWidth': '100%25',
-              'hideWidget': true,
-              'showCloseButton': false,
-              'disableAnimations': true,
-              'closeOnEscape': false,
-              'showConversationsButton': false,
-              'enableTranscriptDownload': false,
-              'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css'
-          });
-          window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
-        </script></body>"></iframe>
+        <iframe srcdoc="... your existing iframe code ..."></iframe>
     </div>
+    <script>
+        document.getElementById('toggle-chatbot').addEventListener('click', function() {
+            var chatbotContainer = document.getElementById('chatbot-container');
+            if (chatbotContainer.style.display === 'none') {
+                chatbotContainer.style.display = 'block';
+            } else {
+                chatbotContainer.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
