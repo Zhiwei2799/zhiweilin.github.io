@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
 <head>
-    <!-- Head content like meta tags, title, link to stylesheets -->
+{% include head.html %}
 </head>
+
 <body>
     <div class="site-container">
         <header class="site-header">
