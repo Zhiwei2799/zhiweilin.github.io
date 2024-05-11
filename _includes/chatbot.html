@@ -3,14 +3,12 @@
 <head>
     <title>ChatBot</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- Font Awesome CDN -->
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background-color: #000000;
             color: white;
         }
@@ -30,8 +28,8 @@
         #toggle-chatbot {
             position: fixed;
             left: 10px;
-            bottom: 10px; /* Positioned above the chatbot container */
-            cursor: pointer; /* Makes it clear it's clickable */
+            bottom: 720px; /* Adjusted for visibility */
+            cursor: pointer;
             padding: 8px 15px;
             background-color: #0084ff;
             color: white;
@@ -48,18 +46,20 @@
     </style>
 </head>
 <body>
-    <button id="toggle-chatbot">Chat with Zhiwei Bot</button>
+    <i id="toggle-chatbot" class="fas fa-comments" style="font-size:24px;"></i>
     <div id="chatbot-container">
-        <iframe srcdoc="... your existing iframe code ..."></iframe>
+        <iframe srcdoc="
+            <html>
+                <body style='margin:0; font-family: Arial, sans-serif; height: 100%; display: flex; justify-content: center; align-items: center; background-color: #000000; color: white;'>
+                    <!-- Your chatbot content goes here -->
+                </body>
+            </html>
+        "></iframe>
     </div>
     <script>
         document.getElementById('toggle-chatbot').addEventListener('click', function() {
             var chatbotContainer = document.getElementById('chatbot-container');
-            if (chatbotContainer.style.display === 'none') {
-                chatbotContainer.style.display = 'block';
-            } else {
-                chatbotContainer.style.display = 'none';
-            }
+            chatbotContainer.style.display = (chatbotContainer.style.display === 'none' ? 'block' : 'none');
         });
     </script>
 </body>
