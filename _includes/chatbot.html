@@ -16,15 +16,16 @@
         }
 
         #chatbot-container {
-            position: fixed; /* Fixed position */
-            right: 10px; /* Right bottom corner */
-            bottom: 10px;
-            width: 300px; /* Smaller width */
-            height: 400px; /* Smaller height */
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: fixed;  /* Fixed position to keep it at the bottom left corner */
+            left: 10px;       /* Distance from the left side of the viewport */
+            bottom: 10px;     /* Distance from the bottom of the viewport */
+            width: 300px;     /* Width of the chatbot container */
+            height: 400px;    /* Height of the chatbot container */
+            border-radius: 10px;  /* Optional: Rounds the corners of the chatbot container */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* Optional: Adds shadow for better visibility */
+            overflow: hidden; /* Ensures no overflow content is visible outside the container */
         }
+
 
         iframe {
             width: 100%;
