@@ -2,72 +2,64 @@
 <html>
 <head>
     <title>ChatBot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         body {
             margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
             height: 100vh;
-            background-color: #000000; /* Optional: Change the background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
             color: white;
         }
 
-        .center-div {
-            position: fixed; /* Fixed positioning to pin the chatbot to the screen corner */
-            left: 10px; /* 10px from the left edge of the viewport */
-            bottom: 10px; /* 10px from the bottom edge of the viewport */
-            width: 300px; /* Width of the chatbot container */
-            height: 700px; /* Height of the chatbot container */
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            overflow: hidden;
+        #chatbot-container {
+            position: fixed;  /* Keeps the chatbot at a fixed position */
+            left: 10px;       /* Distance from the left side of the viewport */
+            bottom: 10px;     /* Distance from the bottom of the viewport */
+            width: 300px;     /* Smaller width for the chatbot container */
+            height: 550px;    /* Smaller height for the chatbot container */
+            border-radius: 10px;  /* Rounded corners for the container */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* Shadow for better visibility */
+            overflow: hidden; /* Hides any overflow content */
         }
 
         iframe {
             width: 100%;
             height: 100%;
-            border: none;
+            border: none; /* No border for the iframe */
         }
     </style>
 </head>
 <body>
-    <div class="center-div">
-        <iframe
-            srcdoc="
-                <!DOCTYPE html>
-                <html>
-                <head>
-                    <meta name='viewport' content='width=device-width, initial-scale=1'>
-                    <link rel='stylesheet' href='https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css'>
-                </head>
-                <body>
-                    <script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
-                    <script>
-                        window.botpressWebChat.init({
-                            'composerPlaceholder': 'Chat with bot',
-                            'botConversationDescription': 'This chatbot was built surprisingly fast with Botpress',
-                            'botName': 'Name',
-                            'botId': 'd152f93a-c591-4c84-a3d6-9ca6a4c1f687',
-                            'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
-                            'messagingUrl': 'https://messaging.botpress.cloud',
-                            'clientId': 'd152f93a-c591-4c84-a3d6-9ca6a4c1f687',
-                            'enableConversationDeletion': true,
-                            'showPoweredBy': true,
-                            'className': 'webchatIframe',
-                            'containerWidth': '100%',
-                            'layoutWidth': '100%',
-                            'hideWidget': true,
-                            'showCloseButton': false,
-                            'disableAnimations': true,
-                            'closeOnEscape': false,
-                            'showConversationsButton': false
-                        });
-                    </script>
-                </body>
-                </html>
-            "
-        ></iframe>
+    <div id="chatbot-container">
+        <iframe srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+        <script>
+          window.botpressWebChat.init({
+              'composerPlaceholder': 'Start a conversation...',
+              'botConversationDescription': 'Chat with bot',
+              'botName': 'Zhiwei Bot',
+              'botId': 'd152f93a-c591-4c84-a3d6-9ca6a4c1f687',
+              'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+              'messagingUrl': 'https://messaging.botpress.cloud',
+              'clientId': 'd152f93a-c591-4c84-a3d6-9ca6a4c1f687',
+              'enableConversationDeletion': true,
+              'showPoweredBy': true,
+              'className': 'webchatIframe',
+              'containerWidth': '100%25',
+              'layoutWidth': '100%25',
+              'hideWidget': true,
+              'showCloseButton': false,
+              'disableAnimations': true,
+              'closeOnEscape': false,
+              'showConversationsButton': false,
+              'enableTranscriptDownload': false,
+              'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css'
+          });
+          window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+        </script></body>"></iframe>
     </div>
 </body>
 </html>
