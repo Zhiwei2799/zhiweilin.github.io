@@ -2,6 +2,8 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 <head>
+{% include chatbot.html %}
+
 {% include head.html %}
 </head>
 
@@ -28,6 +30,5 @@
         </div>
     </div>
     <!-- Chatbot include at the bottom, right before the end of body tag -->
-    {% include chatbot.html %}
 </body>
 </html>
