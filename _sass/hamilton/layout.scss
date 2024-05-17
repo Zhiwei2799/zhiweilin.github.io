@@ -1,6 +1,13 @@
 /**
  * Site container
  */
+.update-box {
+    border: 1px solid black; 
+    padding: 10px; 
+    margin: 10px 0;
+    display: inline-block; 
+}
+
 .site-container {
   height: 100vh;
   width: 100vw;
