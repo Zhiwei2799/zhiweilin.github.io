@@ -4,7 +4,7 @@ type: CV
 title: CV
 permalink: /CV/
 ---
-[CV.pdf](https://github.com/zhiweilin27/zhiweilin27.github.io/files/14083596/resume_Lin.pdf)
+[CV will be updated soon]
 
 Contact me through email at [zhiweilin27@gmail.com](mailto:zhiweilin27@gmail.com)
 
