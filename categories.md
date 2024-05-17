@@ -4,7 +4,7 @@ type: CV
 title: CV
 permalink: /CV/
 ---
-<div class="CV will be updated soon to reflect new education, projects, and work experience."></div>
+CV will be updated soon to reflect new education, projects, and work experience
  
 Contact me through email at <i class="fas fa-envelope"></i> [zhiweilin27@gmail.com](mailto:zhiweilin27@gmail.com)
 
