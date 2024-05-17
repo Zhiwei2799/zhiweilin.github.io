@@ -5,7 +5,7 @@ title: CV
 permalink: /CV/
 ---
 <div class="update-box">
-    Click - CV will be updated soon... <be> for new education, projects, and work experience
+    Click - CV will be updated soon... <br> for new education, projects, and work experience
 </div>
 
 Contact me through email at <i class="fas fa-envelope"></i> [zhiweilin27@gmail.com](mailto:zhiweilin27@gmail.com)
