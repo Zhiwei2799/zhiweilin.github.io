@@ -5,7 +5,7 @@ title: CV
 permalink: /CV/
 ---
 <div class="update-box">
-    [Click - Resume_Lin.pdf](https://github.com/user-attachments/files/17080340/resume_Lin__Copy_-5.pdf)
+    [Click - Resume_Lin](https://github.com/user-attachments/files/17080340/resume_Lin__Copy_-5.pdf)
 </div>
 
 Contact me through email at <i class="fas fa-envelope"></i> [zhiweilin27@gmail.com](mailto:zhiweilin27@gmail.com)
