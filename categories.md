@@ -5,7 +5,7 @@ title: CV
 permalink: /CV/
 ---
 <div class="update-box">
-    <a href="https://github.com/user-attachments/files/17080340/resume_Lin__Copy_-5.pdf" target="_blank">Click - Resume_Lin</a>
+    <a href="https://github.com/user-attachments/files/17084693/resume_Lin.pdf" target="_blank">Click - Resume_Lin</a>
 </div>
 
 
