@@ -24,6 +24,14 @@ permalink: /Project/
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [Code](https://github.com/zhiweilin27/ResNet)
 
+## CSE 538 NLP Term Project
+  - Built ChatGPT2 and T5 LLM.
+<i class="far fa-hand-pointer fa-rotate-90"></i>
+[CSE 538 Project_Report.pdf](https://github.com/user-attachments/files/18813095/Project_Report.pdf)
+
+<i class="far fa-hand-pointer fa-rotate-90"></i>
+[Code](https://github.com/zhiweilin27/NLP/tree/main/CSE%20538%20Term%20Project%20Code)
+
 ## Principal Component Analysis (PCA) vs Auto-encoder (AE) for Handwritten Digit Images from USPS
    - Conducted PCA by singular vector decomposition (SVD) and Auto-encoder(AE) with weights sharing, without weights sharing, and with more layers and nonlinear functions, to handwritten digit image from USPS
    - Compared the Frobenius norm error between the input matrices and reconstructed ones. Gained an understanding of the effect of different methods on feature dimensionality reduction.
