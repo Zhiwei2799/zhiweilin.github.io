@@ -26,6 +26,7 @@ permalink: /Project/
 
 ## CSE 538 NLP Term Project
   - Built ChatGPT2 and T5 LLM.
+    
 <i class="far fa-hand-pointer fa-rotate-90"></i>
 [CSE 538 Project_Report.pdf](https://github.com/user-attachments/files/18813095/Project_Report.pdf)
 
